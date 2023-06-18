@@ -11,6 +11,7 @@
 		E4B390CF2A34E98E002D0520 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B390CE2A34E98E002D0520 /* ContentView.swift */; };
 		E4B390D12A34E98F002D0520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B390D02A34E98F002D0520 /* Assets.xcassets */; };
 		E4B390D52A34E98F002D0520 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B390D42A34E98F002D0520 /* Preview Assets.xcassets */; };
+		E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2072A3F31BA0051F4BA /* PreviewProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E4B390D02A34E98F002D0520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B390D22A34E98F002D0520 /* TripApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TripApp.entitlements; sourceTree = "<group>"; };
 		E4B390D42A34E98F002D0520 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4DEA2072A3F31BA0051F4BA /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E4B390CC2A34E98E002D0520 /* TripAppApp.swift */,
 				E4B390CE2A34E98E002D0520 /* ContentView.swift */,
+				E4DEA2062A3F317D0051F4BA /* Extensions */,
 				E4B390D02A34E98F002D0520 /* Assets.xcassets */,
 				E4B390D22A34E98F002D0520 /* TripApp.entitlements */,
 				E4B390D32A34E98F002D0520 /* Preview Content */,
@@ -67,6 +70,14 @@
 				E4B390D42A34E98F002D0520 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4DEA2062A3F317D0051F4BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4DEA2072A3F31BA0051F4BA /* PreviewProvider.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B390CF2A34E98E002D0520 /* ContentView.swift in Sources */,
+				E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */,
 				E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
