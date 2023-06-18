@@ -62,10 +62,9 @@
 		E4B390CB2A34E98E002D0520 /* TripApp */ = {
 			isa = PBXGroup;
 			children = (
+				E4DEA2122A3F36860051F4BA /* Auxiliary */,
 				E4B390CC2A34E98E002D0520 /* TripAppApp.swift */,
 				E4B390CE2A34E98E002D0520 /* ContentView.swift */,
-				E4DEA20F2A3F35FF0051F4BA /* Enumeration */,
-				E4DEA2062A3F317D0051F4BA /* Extensions */,
 				E4B390D02A34E98F002D0520 /* Assets.xcassets */,
 				E4B390D22A34E98F002D0520 /* TripApp.entitlements */,
 				E4B390D32A34E98F002D0520 /* Preview Content */,
@@ -98,6 +97,15 @@
 				E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */,
 			);
 			path = Enumeration;
+			sourceTree = "<group>";
+		};
+		E4DEA2122A3F36860051F4BA /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				E4DEA20F2A3F35FF0051F4BA /* Enumeration */,
+				E4DEA2062A3F317D0051F4BA /* Extensions */,
+			);
+			path = Auxiliary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

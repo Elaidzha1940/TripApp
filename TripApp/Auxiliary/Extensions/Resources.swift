@@ -1,9 +1,13 @@
+//  /*
 //
-//  Resources.swift
-//  TripApp
+//  Project: TripApp
+//  File: Resources.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 18.06.2023
 //
-//  Created by Elaidzha Shchukin on 18.06.2023.
+//  Status: #In progress | #Not decorated
 //
+//  */
 
 import Foundation
 
