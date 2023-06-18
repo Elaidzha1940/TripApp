@@ -20,6 +20,8 @@
 		E4DEA21C2A3F388E0051F4BA /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA21B2A3F388E0051F4BA /* ColorAsset.swift */; };
 		E4DEA21E2A3F397D0051F4BA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA21D2A3F397D0051F4BA /* Colors.xcassets */; };
 		E4DEA2202A3F398B0051F4BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA21F2A3F398B0051F4BA /* Images.xcassets */; };
+		E4DEA2222A3F3CD10051F4BA /* Inter in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA2212A3F3CD10051F4BA /* Inter */; };
+		E4DEA2272A3F3D080051F4BA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2262A3F3D080051F4BA /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E4DEA21B2A3F388E0051F4BA /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
 		E4DEA21D2A3F397D0051F4BA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E4DEA21F2A3F398B0051F4BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4DEA2212A3F3CD10051F4BA /* Inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Inter; sourceTree = "<group>"; };
+		E4DEA2262A3F3D080051F4BA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 		E4DEA2152A3F381A0051F4BA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E4DEA2212A3F3CD10051F4BA /* Inter */,
+				E4DEA2262A3F3D080051F4BA /* Fonts.swift */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 				E4DEA2202A3F398B0051F4BA /* Images.xcassets in Resources */,
 				E4B390D52A34E98F002D0520 /* Preview Assets.xcassets in Resources */,
 				E4B390D12A34E98F002D0520 /* Assets.xcassets in Resources */,
+				E4DEA2222A3F3CD10051F4BA /* Inter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +237,7 @@
 				E4DEA20A2A3F321F0051F4BA /* Resources.swift in Sources */,
 				E4DEA21C2A3F388E0051F4BA /* ColorAsset.swift in Sources */,
 				E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */,
+				E4DEA2272A3F3D080051F4BA /* Fonts.swift in Sources */,
 				E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */,
 				E4DEA2182A3F386B0051F4BA /* AssetConvertable.swift in Sources */,
 				E4DEA20E2A3F35730051F4BA /* Color.swift in Sources */,
