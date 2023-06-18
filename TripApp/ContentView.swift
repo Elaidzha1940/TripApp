@@ -17,9 +17,6 @@ struct ContentView: View {
         VStack {
 
             Text("Lets Start")
-            Text("Lets Start")
-            Text("Lets Start")
-            Text("Lets Start")
             
         }
     }
