@@ -16,6 +16,8 @@
 		E4DEA20C2A3F32CD0051F4BA /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA20B2A3F32CD0051F4BA /* Text.swift */; };
 		E4DEA20E2A3F35730051F4BA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA20D2A3F35730051F4BA /* Color.swift */; };
 		E4DEA2112A3F36150051F4BA /* PreviewProviderOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */; };
+		E4DEA2182A3F386B0051F4BA /* AssetConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2172A3F386B0051F4BA /* AssetConvertable.swift */; };
+		E4DEA21C2A3F388E0051F4BA /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA21B2A3F388E0051F4BA /* ColorAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E4DEA20B2A3F32CD0051F4BA /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		E4DEA20D2A3F35730051F4BA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProviderOption.swift; sourceTree = "<group>"; };
+		E4DEA2172A3F386B0051F4BA /* AssetConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetConvertable.swift; sourceTree = "<group>"; };
+		E4DEA21B2A3F388E0051F4BA /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				E4DEA2122A3F36860051F4BA /* Auxiliary */,
+				E4DEA2062A3F317D0051F4BA /* Extensions */,
+				E4DEA2132A3F37E60051F4BA /* Resources */,
 				E4B390CC2A34E98E002D0520 /* TripAppApp.swift */,
 				E4B390CE2A34E98E002D0520 /* ContentView.swift */,
 				E4B390D02A34E98F002D0520 /* Assets.xcassets */,
@@ -103,9 +109,41 @@
 			isa = PBXGroup;
 			children = (
 				E4DEA20F2A3F35FF0051F4BA /* Enumeration */,
-				E4DEA2062A3F317D0051F4BA /* Extensions */,
+				E4DEA2162A3F384B0051F4BA /* Protocols */,
 			);
 			path = Auxiliary;
+			sourceTree = "<group>";
+		};
+		E4DEA2132A3F37E60051F4BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4DEA2142A3F38140051F4BA /* Assets */,
+				E4DEA2152A3F381A0051F4BA /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E4DEA2142A3F38140051F4BA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E4DEA2152A3F381A0051F4BA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		E4DEA2162A3F384B0051F4BA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E4DEA2172A3F386B0051F4BA /* AssetConvertable.swift */,
+				E4DEA21B2A3F388E0051F4BA /* ColorAsset.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +220,10 @@
 				E4B390CF2A34E98E002D0520 /* ContentView.swift in Sources */,
 				E4DEA20C2A3F32CD0051F4BA /* Text.swift in Sources */,
 				E4DEA20A2A3F321F0051F4BA /* Resources.swift in Sources */,
+				E4DEA21C2A3F388E0051F4BA /* ColorAsset.swift in Sources */,
 				E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */,
 				E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */,
+				E4DEA2182A3F386B0051F4BA /* AssetConvertable.swift in Sources */,
 				E4DEA20E2A3F35730051F4BA /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
