@@ -18,6 +18,8 @@
 		E4DEA2112A3F36150051F4BA /* PreviewProviderOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */; };
 		E4DEA2182A3F386B0051F4BA /* AssetConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2172A3F386B0051F4BA /* AssetConvertable.swift */; };
 		E4DEA21C2A3F388E0051F4BA /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA21B2A3F388E0051F4BA /* ColorAsset.swift */; };
+		E4DEA21E2A3F397D0051F4BA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA21D2A3F397D0051F4BA /* Colors.xcassets */; };
+		E4DEA2202A3F398B0051F4BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA21F2A3F398B0051F4BA /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProviderOption.swift; sourceTree = "<group>"; };
 		E4DEA2172A3F386B0051F4BA /* AssetConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetConvertable.swift; sourceTree = "<group>"; };
 		E4DEA21B2A3F388E0051F4BA /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
+		E4DEA21D2A3F397D0051F4BA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E4DEA21F2A3F398B0051F4BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		E4DEA2142A3F38140051F4BA /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E4DEA21D2A3F397D0051F4BA /* Colors.xcassets */,
+				E4DEA21F2A3F398B0051F4BA /* Images.xcassets */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -204,6 +210,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DEA21E2A3F397D0051F4BA /* Colors.xcassets in Resources */,
+				E4DEA2202A3F398B0051F4BA /* Images.xcassets in Resources */,
 				E4B390D52A34E98F002D0520 /* Preview Assets.xcassets in Resources */,
 				E4B390D12A34E98F002D0520 /* Assets.xcassets in Resources */,
 			);
