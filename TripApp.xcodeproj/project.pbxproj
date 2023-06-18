@@ -14,6 +14,8 @@
 		E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2072A3F31BA0051F4BA /* PreviewProvider.swift */; };
 		E4DEA20A2A3F321F0051F4BA /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2092A3F321F0051F4BA /* Resources.swift */; };
 		E4DEA20C2A3F32CD0051F4BA /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA20B2A3F32CD0051F4BA /* Text.swift */; };
+		E4DEA20E2A3F35730051F4BA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA20D2A3F35730051F4BA /* Color.swift */; };
+		E4DEA2112A3F36150051F4BA /* PreviewProviderOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E4DEA2072A3F31BA0051F4BA /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		E4DEA2092A3F321F0051F4BA /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		E4DEA20B2A3F32CD0051F4BA /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		E4DEA20D2A3F35730051F4BA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProviderOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				E4B390CC2A34E98E002D0520 /* TripAppApp.swift */,
 				E4B390CE2A34E98E002D0520 /* ContentView.swift */,
+				E4DEA20F2A3F35FF0051F4BA /* Enumeration */,
 				E4DEA2062A3F317D0051F4BA /* Extensions */,
 				E4B390D02A34E98F002D0520 /* Assets.xcassets */,
 				E4B390D22A34E98F002D0520 /* TripApp.entitlements */,
@@ -82,8 +87,17 @@
 				E4DEA2072A3F31BA0051F4BA /* PreviewProvider.swift */,
 				E4DEA2092A3F321F0051F4BA /* Resources.swift */,
 				E4DEA20B2A3F32CD0051F4BA /* Text.swift */,
+				E4DEA20D2A3F35730051F4BA /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4DEA20F2A3F35FF0051F4BA /* Enumeration */ = {
+			isa = PBXGroup;
+			children = (
+				E4DEA2102A3F36150051F4BA /* PreviewProviderOption.swift */,
+			);
+			path = Enumeration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DEA2112A3F36150051F4BA /* PreviewProviderOption.swift in Sources */,
 				E4B390CF2A34E98E002D0520 /* ContentView.swift in Sources */,
 				E4DEA20C2A3F32CD0051F4BA /* Text.swift in Sources */,
 				E4DEA20A2A3F321F0051F4BA /* Resources.swift in Sources */,
 				E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */,
 				E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */,
+				E4DEA20E2A3F35730051F4BA /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

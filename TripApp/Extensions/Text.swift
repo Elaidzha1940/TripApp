@@ -1,20 +1,27 @@
+//  /*
 //
-//  Text.swift
-//  TripApp
+//  Project: TripApp
+//  File: Text.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 18.06.2023
 //
-//  Created by Elaidzha Shchukin on 18.06.2023.
+//  Status
 //
+//  */
 
 import SwiftUI
 
-struct Text: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-struct Text_Previews: PreviewProvider {
-    static var previews: some View {
-        Text()
+extension Text {
+    func soffitMenuFont() -> Text {
+        var text = self
+        text = text.font(.custom("Roboto-Medium", size: 12))
+        return text
+    }
+    
+    func soffitPriceFont() -> Text {
+        var text = self
+        text = text.font(.custom("Roboto-Medium", size: 16))
+        return text
     }
 }
