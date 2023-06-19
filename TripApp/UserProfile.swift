@@ -13,7 +13,34 @@ import SwiftUI
 
 struct UserProfile: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            Text("Добро пожаловать")
+                .font(.custom("Inter-Medium", size: 20))
+                .fontWeight(.thin)
+                .foregroundColor(Color(toText: .mainblack))
+
+            Divider()
+                .frame(height: 1)
+                .background(Color.black)
+            
+            Text("Давайте знакомиться")
+            
+            VStack() {
+                
+                HStack {
+                    
+                    Text("Запишем вас:")
+                    Text(" - в список помогавших наполнять базу перевалов")
+                    Text(" - в качестве первопроходителей перевала, если он новый")
+                    Text(" - в базу туристов ФСТР")
+                }
+                .font(.custom("Inter-Medium", size: 20))
+
+                
+            }
+        }
     }
 }
 

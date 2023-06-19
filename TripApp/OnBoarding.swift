@@ -63,7 +63,7 @@ struct OnBoarding: View {
                                 .frame(width: 430, height: 50)
                                 .foregroundColor(Color(toElement: .maingrey))
                             
-                            HStack(spacing: 80) {
+                            HStack(spacing: 90) {
                                 Image("icon-polygon")
                                 Image("icon-ellipse")
                                 Image("icon-cube")
