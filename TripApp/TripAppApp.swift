@@ -15,7 +15,7 @@ import SwiftUI
 struct TripAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnBoarding()
         }
     }
 }

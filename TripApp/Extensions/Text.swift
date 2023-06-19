@@ -15,13 +15,13 @@ import SwiftUI
 extension Text {
     func soffitMenuFont() -> Text {
         var text = self
-        text = text.font(.custom("Roboto-Medium", size: 12))
+        text = text.font(.custom("Inter-Medium", size: 12))
         return text
     }
     
     func soffitPriceFont() -> Text {
         var text = self
-        text = text.font(.custom("Roboto-Medium", size: 16))
+        text = text.font(.custom("Inter-Medium", size: 16))
         return text
     }
 }

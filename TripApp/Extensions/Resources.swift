@@ -25,6 +25,6 @@ extension Resources {
     }
     
     enum Categories: String, AssetConvertable {
-        case yes
+        case later
     }
 }

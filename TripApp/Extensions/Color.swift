@@ -16,7 +16,7 @@ internal extension Color {
     //MARK: Element
     //=============================================
     enum Element: String, AssetColor {
-        case mainblue, maingrey
+        case mainblue, maingrey, mainwhite
     }
     init(toElement option: Self.Element){
         self.init(option.colorName)
