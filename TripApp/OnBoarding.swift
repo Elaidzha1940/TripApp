@@ -47,13 +47,13 @@ struct OnBoarding: View {
                         //action
                     } label: {
                         Text("Войти")
+                            .font(.custom("Inter-Medium", size: 20))
+                            .foregroundColor(Color(toText: .mainblack))
+                            .frame(width: 340, height: 50)
+                            .background(Color(toElement: .mainwhite))
+                            .cornerRadius(60)
+                            .padding()
                     }
-                    .font(.custom("Inter-Medium", size: 20))
-                    .foregroundColor(Color(toText: .main))
-                    .frame(width: 300, height: 44)
-                    .background(Color(toElement: .mainwhite))
-
-
 
                 }
                 //.padding()
@@ -65,6 +65,8 @@ struct OnBoarding: View {
 
 struct OnBoarding_Previews: PreviewProvider {
     static var previews: some View {
-        OnBoarding()
+        self.devices {
+            OnBoarding()
+        }
     }
 }
