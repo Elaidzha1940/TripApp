@@ -18,6 +18,7 @@ struct OnBoarding: View {
             ZStack {
                 Color(toElement: .mainblue)
                 VStack {
+                    Spacer()
                     
                     Image("system-logo")
                         .frame(width: 161, height: 97)
@@ -53,6 +54,22 @@ struct OnBoarding: View {
                             .background(Color(toElement: .mainwhite))
                             .cornerRadius(60)
                             .padding()
+                    }
+                    
+                    Spacer()
+                    HStack{
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 430, height: 50)
+                                .foregroundColor(Color(toElement: .maingrey))
+                            
+                            HStack(spacing: 80) {
+                                Image("icon-polygon")
+                                Image("icon-ellipse")
+                                Image("icon-cube")
+                                
+                            }
+                        }
                     }
 
                 }
