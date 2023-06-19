@@ -22,6 +22,7 @@
 		E4DEA2202A3F398B0051F4BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA21F2A3F398B0051F4BA /* Images.xcassets */; };
 		E4DEA2222A3F3CD10051F4BA /* Inter in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA2212A3F3CD10051F4BA /* Inter */; };
 		E4DEA2272A3F3D080051F4BA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2262A3F3D080051F4BA /* Fonts.swift */; };
+		E4DEA2292A40A1980051F4BA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2282A40A1980051F4BA /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E4DEA21F2A3F398B0051F4BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4DEA2212A3F3CD10051F4BA /* Inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Inter; sourceTree = "<group>"; };
 		E4DEA2262A3F3D080051F4BA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E4DEA2282A40A1980051F4BA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				E4DEA2132A3F37E60051F4BA /* Resources */,
 				E4B390CC2A34E98E002D0520 /* TripAppApp.swift */,
 				E4B390CE2A34E98E002D0520 /* OnBoarding.swift */,
+				E4DEA2282A40A1980051F4BA /* UserProfile.swift */,
 				E4B390D02A34E98F002D0520 /* Assets.xcassets */,
 				E4B390D22A34E98F002D0520 /* TripApp.entitlements */,
 				E4B390D32A34E98F002D0520 /* Preview Content */,
@@ -236,6 +239,7 @@
 				E4DEA20C2A3F32CD0051F4BA /* Text.swift in Sources */,
 				E4DEA20A2A3F321F0051F4BA /* Resources.swift in Sources */,
 				E4DEA21C2A3F388E0051F4BA /* ColorAsset.swift in Sources */,
+				E4DEA2292A40A1980051F4BA /* UserProfile.swift in Sources */,
 				E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */,
 				E4DEA2272A3F3D080051F4BA /* Fonts.swift in Sources */,
 				E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */,
