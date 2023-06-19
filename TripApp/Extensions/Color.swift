@@ -25,7 +25,7 @@ internal extension Color {
     //MARK: Text
     //=============================================
     enum Text: String, AssetColor {
-        case main, mainblack
+        case main, mainblack, mainblue, blacktext
     }
     init(toText option: Self.Text){
         self.init(option.colorName)
