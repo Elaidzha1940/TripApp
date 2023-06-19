@@ -37,6 +37,8 @@ struct UserProfile: View {
                     Text(" - в базу туристов ФСТР")
                 }
                 .font(.custom("Inter-Medium", size: 20))
+                .multilineTextAlignment(.leading)
+                .padding()
 
                 
             }
