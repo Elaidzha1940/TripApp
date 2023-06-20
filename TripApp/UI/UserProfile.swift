@@ -46,6 +46,14 @@ struct UserProfile: View {
             Rectangle()
                 .frame(width: 300, height: 30)
                 .foregroundColor(Color(toElement: .mainblue))
+            Rectangle()
+                .frame(width: 300, height: 30)
+                .foregroundColor(Color(toElement: .mainblue))
+            Rectangle()
+                .frame(width: 300, height: 30)
+                .foregroundColor(Color(toElement: .mainblue))
+           
+       
             
             Button {
                 //action
