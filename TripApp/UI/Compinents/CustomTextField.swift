@@ -14,7 +14,7 @@ import SwiftUI
 struct CustomTextField: View {
     
     @State var textFieldText: String = ""
-    //@State var dataArray: [String] = []
+    @State var dataArray: [String] = []
     
     var body: some View {
         

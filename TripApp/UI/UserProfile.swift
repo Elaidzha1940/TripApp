@@ -13,7 +13,7 @@ import SwiftUI
 
 struct UserProfile: View {
     
-    @State var textFieldText: String = ""
+    @State var surnameFieldText: String = ""
     @State var nameFieldText: String = ""
     @State var famNameFieldText: String = ""
     @State var mailFieldText: String = ""
@@ -52,9 +52,10 @@ struct UserProfile: View {
                 .frame(width: 290)
                 .padding()
                 
+                
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    TextField("", text: $textFieldText)
+                    TextField("", text: $surnameFieldText)
                         .textFieldStyle(.roundedBorder)
                         .border(Color(toText: .greytext))
                         .font(.custom("Inter-Regular", size: 15))
@@ -62,15 +63,17 @@ struct UserProfile: View {
                     
                     Text("Фамилия")
                         .font(.custom("Inter-Regular", size: 9))
-                    
+                        .foregroundColor(Color(toText: .greytext))
+
                     TextField("", text: $nameFieldText)
                         .textFieldStyle(.roundedBorder)
                         .border(Color(toText: .greytext))
                         .font(.custom("Inter-Regular", size: 15))
                         .foregroundColor(Color(toText: .textfieldgrey))
                     
-                    Text("Фамилия")
+                    Text("Имя")
                         .font(.custom("Inter-Regular", size: 9))
+                        .foregroundColor(Color(toText: .greytext))
 
                     
                     TextField("", text: $famNameFieldText)
@@ -79,31 +82,34 @@ struct UserProfile: View {
                         .font(.custom("Inter-Regular", size: 15))
                         .foregroundColor(Color(toText: .textfieldgrey))
                     
-                    Text("Фамилия")
+                    Text("Отчество")
                         .font(.custom("Inter-Regular", size: 9))
+                        .foregroundColor(Color(toText: .greytext))
 
                     
-                    TextField("", text: $mailFieldText)
+                    TextField("yourmail.com", text: $mailFieldText)
                         .textFieldStyle(.roundedBorder)
                         .border(Color(toText: .greytext))
                         .font(.custom("Inter-Regular", size: 15))
                         .foregroundColor(Color(toText: .textfieldgrey))
                     
-                    Text("Фамилия")
+                    Text("E-mail будет логином и основным средством связи с вами")
                         .font(.custom("Inter-Regular", size: 9))
+                        .foregroundColor(Color(toText: .greytext))
 
-                    
-                    TextField("", text: $telFieldText)
+
+                    TextField("+7_", text: $telFieldText)
                         .textFieldStyle(.roundedBorder)
                         .border(Color(toText: .greytext))
                         .font(.custom("Inter-Regular", size: 15))
                         .foregroundColor(Color(toText: .textfieldgrey))
                     
-                    Text("Фамилия")
+                    Text("По желанию")
                         .font(.custom("Inter-Regular", size: 9))
+                        .foregroundColor(Color(toText: .greytext))
 
                     
-//                    TextField("", text: $netFieldText)
+//                    TextField("ссылка на", text: $netFieldText)
 //                        .textFieldStyle(.roundedBorder)
 //                        .border(Color(toText: .greytext))
 //                        .font(.custom("Inter-Regular", size: 15))
@@ -112,21 +118,23 @@ struct UserProfile: View {
 //                    //Text("Фамилия")
 //                       // .font(.custom("Inter-Regular", size: 9))
 
-                    
+//                    VStack {
+//                        Button {
+//                            //action
+//                        } label: {
+//                            Text("Войти")
+//                                .font(.custom("Inter-Medium", size: 20))
+//                                .foregroundColor(Color(toText: .mainblack))
+//                                .frame(width: 340, height: 50)
+//                                .background(Color(toElement: .buttoncolor))
+//                                .cornerRadius(60)
+//                                .padding()
+//                        }
+//                    }
                 }
                 .padding()
                 
-                Button {
-                    //action
-                } label: {
-                    Text("Войти")
-                        .font(.custom("Inter-Medium", size: 20))
-                        .foregroundColor(Color(toText: .mainblack))
-                        .frame(width: 340, height: 50)
-                        .background(Color(toElement: .buttoncolor))
-                        .cornerRadius(60)
-                        .padding()
-                }
+               
                 
                 Text("Используя приложение, вы даете согласие ФСТР на")
                     .font(.custom("Inter-Medium", size: 10))
