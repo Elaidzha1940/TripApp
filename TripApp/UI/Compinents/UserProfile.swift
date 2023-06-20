@@ -29,7 +29,7 @@ struct UserProfile: View {
                 .font(.custom("Inter-Regular", size: 28))
                 .foregroundColor(Color(toText: .mainblue))
             
-            VStack(alignment: .leading, spacing: 20) {
+            VStack(alignment: .leading, spacing: 10) {
                 
                 Text("Запишем вас:")
                     .padding(.horizontal, -15)
@@ -79,6 +79,8 @@ struct UserProfile: View {
 
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfile()
+        self.devices {
+            UserProfile()
+        }
     }
 }
