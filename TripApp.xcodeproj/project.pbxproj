@@ -170,6 +170,8 @@
 				E4F2CBDD2A41EBD20068AEF1 /* Auth_login */,
 				E4F2CBE02A41ECE20068AEF1 /* Representations */,
 				E4F2CBE12A41EE0D0068AEF1 /* Compinents */,
+				E4B390CE2A34E98E002D0520 /* OnBoarding.swift */,
+				E4DEA2282A40A1980051F4BA /* UserProfile.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -201,8 +203,6 @@
 		E4F2CBE12A41EE0D0068AEF1 /* Compinents */ = {
 			isa = PBXGroup;
 			children = (
-				E4B390CE2A34E98E002D0520 /* OnBoarding.swift */,
-				E4DEA2282A40A1980051F4BA /* UserProfile.swift */,
 			);
 			path = Compinents;
 			sourceTree = "<group>";
