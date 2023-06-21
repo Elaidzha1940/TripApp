@@ -18,13 +18,45 @@ struct CustomTextField: View {
     
     var body: some View {
         
-        TextField("", text: $textFieldText)
-            .textFieldStyle(.roundedBorder)
-            .border(Color(toText: .greytext))
-            .font(.custom("Inter-Regular", size: 15))
-            .foregroundColor(Color(toText: .textfieldgrey))
-            .padding()
+        VStack {
+            TextField("", text: $textFieldText)
+                .textFieldStyle(.roundedBorder)
+                .border(Color(toText: .greytext))
+                .font(.custom("Inter-Regular", size: 15))
+                .foregroundColor(Color(toText: .textfieldgrey))
+                .padding()
+            
+            Button(action: {
+                if textisApproopriate() {
+                    saveText()
+                }
+            }, label: {
+                Text("Войти")
+                    //.font(.custom("Inter-Medium", size: 20))
+                    .frame(maxWidth: .infinity)
+                    .background(textisApproopriate() ? Color.black : Color.red)
+                    .foregroundColor(Color(toText: .mainblack))
+                    .cornerRadius(60)
+                   // .padding()
+            })
+            
+            ForEach(dataArray, id: \.self) { data in
+                Text(data)
+            }
+        }
         
+        func textisApproopriate() -> Bool {
+            //check text
+            if textFieldText.count >= 3 {
+                return true
+            }
+            return false
+        }
+        
+        func saveText() {
+            dataArray.append(textFieldText)
+            textFieldText = ""
+        }
     }
 }
 
