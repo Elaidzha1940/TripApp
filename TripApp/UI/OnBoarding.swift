@@ -22,13 +22,14 @@ struct OnBoarding: View {
                     
                     Image("system-logo")
                         .frame(width: 161, height: 97)
+                    
                     HStack {
                         
                         Text("#ПОХОДЫ #СВОБОДА #ПРЕОДОЛЕНИЕ #ОКРЫТИЯ")
                             .font(.custom("Inter-Medium", size: 20))
                             .foregroundColor(Color(toText: .main))
                             .frame(width: 363, height: 143)
-                       
+                        
                     }
                     .multilineTextAlignment(.center)
                     .padding()
@@ -37,13 +38,13 @@ struct OnBoarding: View {
                         .font(.custom("Inter-Medium", size: 36))
                         .foregroundColor(Color(toText: .main))
                         .padding()
-
+                    
                     
                     Text("Наполняем каталог перевалов вместе")
                         .font(.custom("Inter-Medium", size: 16))
                         .foregroundColor(Color(toText: .main))
                         .padding()
-
+                    
                     Button {
                         //action
                     } label: {
@@ -71,7 +72,7 @@ struct OnBoarding: View {
                             }
                         }
                     }
-
+                    
                 }
                 //.padding()
             }
