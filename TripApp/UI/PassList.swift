@@ -46,17 +46,6 @@ struct PassList: View {
                 .multilineTextAlignment(.center)
                 .padding()
             
-            //            Button {
-            //                //action
-            //            } label: {
-            //                Text("Посмотреть базу перевалов")
-            //                    .font(.custom("Inter-Medium", size: 16))
-            //                    .underline()
-            //                    .foregroundColor(Color(toText: .mainblue))
-            //                    .multilineTextAlignment(.center)
-            //
-            //            }
-            
             Link(destination: URL(string: "https://tssr.ru/main/structura/2720/")!, label: {
                 Text("Посмотреть базу перевалов")
                     .font(.custom("Inter-Medium", size: 16))
