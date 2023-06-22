@@ -23,6 +23,10 @@ struct OnBoarding: View {
                     Image("system-logo")
                         .frame(width: 161, height: 97)
                     
+                    Rectangle()
+                        .frame(width: 380, height: 250)
+                        .foregroundColor(.black.opacity(0.2))
+                    
                     HStack {
                         
                         Text("#ПОХОДЫ #СВОБОДА #ПРЕОДОЛЕНИЕ #ОКРЫТИЯ")
