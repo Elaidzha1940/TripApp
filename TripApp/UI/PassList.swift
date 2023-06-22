@@ -19,7 +19,7 @@ struct PassList: View {
             HStack {
                 Text("Лоханкин Васисуалий")
                     .font(.custom("Inter-Regular", size: 24))
-                    //.fontWeight(.thin)
+                //.fontWeight(.thin)
                     .foregroundColor(Color(toText: .mainblack))
                     .padding(.horizontal, 20)
                     .padding()
@@ -30,7 +30,7 @@ struct PassList: View {
                 }
             }
             .padding(.leading, 35)
-
+            
             Divider()
                 .frame(height: 1)
                 .background(Color.black)
@@ -46,16 +46,24 @@ struct PassList: View {
                 .multilineTextAlignment(.center)
                 .padding()
             
-            Button {
-                //action
-            } label: {
+            //            Button {
+            //                //action
+            //            } label: {
+            //                Text("Посмотреть базу перевалов")
+            //                    .font(.custom("Inter-Medium", size: 16))
+            //                    .underline()
+            //                    .foregroundColor(Color(toText: .mainblue))
+            //                    .multilineTextAlignment(.center)
+            //
+            //            }
+            
+            Link(destination: URL(string: "https://tssr.ru/main/structura/2720/")!, label: {
                 Text("Посмотреть базу перевалов")
                     .font(.custom("Inter-Medium", size: 16))
                     .underline()
                     .foregroundColor(Color(toText: .mainblue))
                     .multilineTextAlignment(.center)
-                
-            }
+            })
             .padding()
         }
     }
