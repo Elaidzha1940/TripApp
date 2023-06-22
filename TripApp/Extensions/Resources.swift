@@ -5,7 +5,7 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 18.06.2023
 //
-//  Status: #In progress | #Not decorated
+//  Status: #In progress | #Decorated
 //
 //  */
 
@@ -16,7 +16,7 @@ enum Resources {}
 extension Resources {
     
     enum System: String, AssetConvertable {
-        case burger, calendar, logo, photo, search, scrap, onboarding, userprofile
+        case burger, calendar, logo, photo, search, scrap
         
     }
     

@@ -5,7 +5,7 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 20.06.2023
 //
-//  S
+//  Status: #In progress | #Not decorated
 //
 //  */
 
@@ -31,32 +31,33 @@ struct CustomTextField: View {
                     saveText()
                 }
             }, label: {
-                Text("Войти")
-                    //.font(.custom("Inter-Medium", size: 20))
+                Text("Войти".uppercased())
+                //.font(.custom("Inter-Medium", size: 20))
                     .frame(maxWidth: .infinity)
                     .background(textisApproopriate() ? Color.black : Color.red)
                     .foregroundColor(Color(toText: .mainblack))
                     .cornerRadius(60)
-                   // .padding()
+                // .padding()
             })
             
             ForEach(dataArray, id: \.self) { data in
                 Text(data)
             }
         }
-        
-        func textisApproopriate() -> Bool {
-            //check text
-            if textFieldText.count >= 3 {
-                return true
+            
+            func textisApproopriate() -> Bool {
+                //check text
+                if textFieldText.count >= 3 {
+                    true
+                }
+                false
             }
-            return false
-        }
+            
+            func saveText() {
+                dataArray.append(textFieldText)
+                textFieldText = ""
+            }
         
-        func saveText() {
-            dataArray.append(textFieldText)
-            textFieldText = ""
-        }
     }
 }
 
@@ -67,3 +68,4 @@ struct CustomTextField_Previews: PreviewProvider {
         }
     }
 }
+
