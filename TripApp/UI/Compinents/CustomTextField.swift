@@ -44,19 +44,19 @@ struct CustomTextField: View {
                 Text(data)
             }
         }
-            
-            func textisApproopriate() -> Bool {
-                //check text
-                if textFieldText.count >= 3 {
-                    true
-                }
-                false
+        
+        func textisApproopriate() -> Bool {
+            //check text
+            if textFieldText.count >= 3 {
+                return true
             }
-            
-            func saveText() {
-                dataArray.append(textFieldText)
-                textFieldText = ""
-            }
+            return false
+        }
+        
+        func saveText() {
+            dataArray.append(textFieldText)
+            textFieldText = ""
+        }
         
     }
 }
@@ -68,4 +68,3 @@ struct CustomTextField_Previews: PreviewProvider {
         }
     }
 }
-
