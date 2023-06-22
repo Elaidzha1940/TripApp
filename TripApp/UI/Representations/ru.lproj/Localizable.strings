@@ -1,0 +1,10 @@
+/*
+ 
+ Project: TripApp
+ File: Localizable.strings
+ Created by: Elaidzha Shchukin
+ Date: 22.06.2023
+
+*/
+
+"text1" = "Введите ваше имя пользователя";
