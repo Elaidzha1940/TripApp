@@ -21,6 +21,7 @@ struct TabMenu: View {
             Spacer()
             CustomTabs(index: self.$index)
         }
+        .background(Color.white)
         .edgesIgnoringSafeArea(.top)
     }
 }
@@ -81,6 +82,7 @@ struct CustomTabs : View {
             
         }
         .padding(.leading, 60)
+        .padding(.top, 35)
         .background(Color(toElement: .maingrey))
         .clipShape(CustomShape())
     }
@@ -91,12 +93,12 @@ struct CustomShape : Shape {
         
         return Path { path in
            
-            path.move(to:  CGPoint(x: 0, y: 0))
-            path.addLine(to: CGPoint(x: 0, y: rect.height))
-            path.addLine(to: CGPoint(x: rect.width, y: rect.height))
-            path.addLine(to: CGPoint(x: rect.width, y: 0))
+            path.move(to:  CGPoint(x: 0, y: 35))
+            path.addLine(to: CGPoint(x: 0, y: rect.width))
+            path.addLine(to: CGPoint(x: rect.width, y: rect.width))
+            path.addLine(to: CGPoint(x: rect.width, y: 35))
             
-            path.addArc(center: CGPoint(x: rect.width / 2, y: 0), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
+            path.addArc(center: CGPoint(x: (rect.width / 2) - 4, y: 35), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
         }
     }
 }
