@@ -82,6 +82,7 @@ struct CustomTabs : View {
         }
         .padding(.leading, 60)
         .background(Color(toElement: .maingrey))
+        .clipShape(CustomShape())
     }
 }
 
@@ -93,9 +94,9 @@ struct CustomShape : Shape {
             path.move(to:  CGPoint(x: 0, y: 0))
             path.addLine(to: CGPoint(x: 0, y: rect.height))
             path.addLine(to: CGPoint(x: rect.width, y: rect.height))
-            path.addLine(to: CGPoint(x: rect.height, y: 0))
+            path.addLine(to: CGPoint(x: rect.width, y: 0))
             
-            
+            path.addArc(center: CGPoint(x: rect.width / 2, y: 0), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
         }
     }
 }
