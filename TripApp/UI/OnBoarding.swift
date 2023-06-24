@@ -68,17 +68,18 @@ struct OnBoarding: View {
                                 .frame(width: 430, height: 50)
                                 .foregroundColor(Color(toElement: .maingrey))
                             
-                            HStack(spacing: 90) {
+                            HStack(spacing: 40) {
                                 Image("icon-polygon")
+                                    .padding(.horizontal, 30)
                                 Image("icon-ellipse")
+                                    .padding(.horizontal, 30)
                                 Image("icon-cube")
+                                    .padding(.horizontal, 30)
                                 
                             }
                         }
                     }
-                    
                 }
-                //.padding()
             }
         }
         .ignoresSafeArea()

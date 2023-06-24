@@ -17,10 +17,11 @@ struct TabMenu: View {
     
     var body: some View {
         
-        VStack(alignment: .leading) {
+        VStack {
+            Spacer()
             CustomTabs(index: self.$index)
         }
-        .padding(.leading, 60)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -38,42 +39,63 @@ struct CustomTabs : View {
     
     var body: some View {
         
-        HStack {
+        HStack(spacing: 50) {
             
             Button(action: {
                 
                 self.index = 0
                 
             }) {
-                Image("icon-polygon")
+                Image("system-burger")
             }
             .foregroundColor(Color(toElement: .mainblack).opacity(self.index == 0 ? 1 : 0.2))
             
             Spacer(minLength: 0)
             
+            ZStack {
+                Circle()
+                Button(action: {
+                    
+                }) {
+                    
+                    Image("icon-whiteplus").renderingMode(.original)
+                }
+            }
+            .frame(width: 45, height: 45)
+            .foregroundColor(Color(toElement: .mainblue))
+            .offset(y: -20)
+            
+            Spacer(minLength: 0)
+            
+            
             Button(action: {
                 
                 self.index = 1
-
+                
             }) {
-                Image("icon-ellipse")
+                Image("system-search")
             }
             .foregroundColor(Color(toElement: .mainblack).opacity(self.index == 1 ? 1 : 0.2))
-
+            
             Spacer(minLength: 0)
-
-            Button(action: {
-                
-                self.index = 2
-
-            }) {
-                Image("icon-cube")
-            }
-            .foregroundColor(Color(toElement: .mainblack).opacity(self.index == 2 ? 1 : 0.2))
-
-            Spacer(minLength: 0)
-
+            
         }
-        .padding(.horizontal, 20)
+        .padding(.leading, 60)
+        .background(Color(toElement: .maingrey))
+    }
+}
+
+struct CustomShape : Shape {
+    func path(in rect: CGRect) -> Path {
+        
+        return Path { path in
+           
+            path.move(to:  CGPoint(x: 0, y: 0))
+            path.addLine(to: CGPoint(x: 0, y: rect.height))
+            path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+            path.addLine(to: CGPoint(x: rect.height, y: 0))
+            
+            
+        }
     }
 }
