@@ -19,20 +19,21 @@ struct UserProfile: View {
     @State var mailFieldText: String = ""
     @State var telFieldText: String = ""
     @State var netFieldText: String = ""
-
+    
     var body: some View {
         
-        ScrollView {
-            VStack {
-                
-                Text("Добро пожаловать")
-                    .font(.custom("Inter-Medium", size: 20))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color(toText: .mainblack))
-                
-                Divider()
-                    .frame(height: 1)
-                    .background(Color.black)
+        VStack {
+            
+            Text("Добро пожаловать")
+                .font(.custom("Inter-Medium", size: 20))
+                .fontWeight(.thin)
+                .foregroundColor(Color(toText: .mainblack))
+            
+            Divider()
+                .frame(height: 1)
+                .background(Color.black)
+            
+            ScrollView {
                 
                 Text("Давайте знакомиться")
                     .font(.custom("Inter-Regular", size: 28))
@@ -64,7 +65,7 @@ struct UserProfile: View {
                     Text("Фамилия")
                         .font(.custom("Inter-Regular", size: 9))
                         .foregroundColor(Color(toText: .greytext))
-
+                    
                     TextField("", text: $nameFieldText)
                         .textFieldStyle(.roundedBorder)
                         .border(Color(toText: .greytext))
@@ -74,7 +75,7 @@ struct UserProfile: View {
                     Text("Имя")
                         .font(.custom("Inter-Regular", size: 9))
                         .foregroundColor(Color(toText: .greytext))
-
+                    
                     
                     TextField("", text: $famNameFieldText)
                         .textFieldStyle(.roundedBorder)
@@ -85,7 +86,7 @@ struct UserProfile: View {
                     Text("Отчество")
                         .font(.custom("Inter-Regular", size: 9))
                         .foregroundColor(Color(toText: .greytext))
-
+                    
                     
                     TextField("yourmail.com", text: $mailFieldText)
                         .textFieldStyle(.roundedBorder)
@@ -96,8 +97,8 @@ struct UserProfile: View {
                     Text("E-mail будет логином и основным средством связи с вами")
                         .font(.custom("Inter-Regular", size: 9))
                         .foregroundColor(Color(toText: .greytext))
-
-
+                    
+                    
                     TextField("+7_", text: $telFieldText)
                         .textFieldStyle(.roundedBorder)
                         .border(Color(toText: .greytext))
@@ -107,34 +108,32 @@ struct UserProfile: View {
                     Text("По желанию")
                         .font(.custom("Inter-Regular", size: 9))
                         .foregroundColor(Color(toText: .greytext))
-
                     
-//                    TextField("ссылка на", text: $netFieldText)
-//                        .textFieldStyle(.roundedBorder)
-//                        .border(Color(toText: .greytext))
-//                        .font(.custom("Inter-Regular", size: 15))
-//                        .foregroundColor(Color(toText: .textfieldgrey))
-//
-//                    //Text("Фамилия")
-//                       // .font(.custom("Inter-Regular", size: 9))
-
-//                    VStack {
-//                        Button {
-//                            //action
-//                        } label: {
-//                            Text("Войти")
-//                                .font(.custom("Inter-Medium", size: 20))
-//                                .foregroundColor(Color(toText: .mainblack))
-//                                .frame(width: 340, height: 50)
-//                                .background(Color(toElement: .buttoncolor))
-//                                .cornerRadius(60)
-//                                .padding()
-//                        }
-//                    }
+                    
+                    //                    TextField("ссылка на", text: $netFieldText)
+                    //                        .textFieldStyle(.roundedBorder)
+                    //                        .border(Color(toText: .greytext))
+                    //                        .font(.custom("Inter-Regular", size: 15))
+                    //                        .foregroundColor(Color(toText: .textfieldgrey))
+                    //
+                    //                    //Text("Фамилия")
+                    //                       // .font(.custom("Inter-Regular", size: 9))
+                    
+                    //                    VStack {
+                    //                        Button {
+                    //                            //action
+                    //                        } label: {
+                    //                            Text("Войти")
+                    //                                .font(.custom("Inter-Medium", size: 20))
+                    //                                .foregroundColor(Color(toText: .mainblack))
+                    //                                .frame(width: 340, height: 50)
+                    //                                .background(Color(toElement: .buttoncolor))
+                    //                                .cornerRadius(60)
+                    //                                .padding()
+                    //                        }
+                    //                    }
                 }
                 .padding()
-                
-               
                 
                 Text("Используя приложение, вы даете согласие ФСТР на")
                     .font(.custom("Inter-Medium", size: 10))
@@ -150,6 +149,32 @@ struct UserProfile: View {
                         .multilineTextAlignment(.center)
                     
                 }
+                
+                Spacer()
+                
+                VStack {
+                    
+                    TabMenu()
+                    
+                    HStack{
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 430, height: 50)
+                                .foregroundColor(Color(toElement: .maingrey))
+                            
+                            HStack(spacing: 40) {
+                                Image("icon-polygon")
+                                    .padding(.horizontal, 30)
+                                Image("icon-ellipse")
+                                    .padding(.horizontal, 30)
+                                Image("icon-cube")
+                                    .padding(.horizontal, 30)
+                                
+                            }
+                        }
+                    }
+                }
+                .padding(.top, 60)
             }
         }
     }
