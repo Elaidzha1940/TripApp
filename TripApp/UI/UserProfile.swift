@@ -141,8 +141,7 @@ struct UserProfile: View {
             }
                         
             VStack {
-                
-                TabMenu()
+                TabMenuPlus()
                     .padding(.bottom, -10)
                 
                 HStack{

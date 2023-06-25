@@ -57,25 +57,30 @@ struct PassList: View {
             
             Spacer()
             
-            
-            
-            HStack{
-                ZStack {
-                    Rectangle()
-                        .frame(width: 430, height: 50)
-                        .foregroundColor(Color(toElement: .maingrey))
-                    
-                    HStack(spacing: 40) {
-                        Image("icon-polygon")
-                            .padding(.horizontal, 30)
-                        Image("icon-ellipse")
-                            .padding(.horizontal, 30)
-                        Image("icon-cube")
-                            .padding(.horizontal, 30)
+            VStack {
+                
+                TabMenu()
+                    .padding(.bottom, -10)
+                
+                HStack{
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 430, height: 50)
+                            .foregroundColor(Color(toElement: .maingrey))
                         
+                        HStack(spacing: 40) {
+                            Image("icon-polygon")
+                                .padding(.horizontal, 30)
+                            Image("icon-ellipse")
+                                .padding(.horizontal, 30)
+                            Image("icon-cube")
+                                .padding(.horizontal, 30)
+                            
+                        }
                     }
                 }
             }
+            .padding(.bottom, -35)
         }
     }
 }

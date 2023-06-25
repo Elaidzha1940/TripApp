@@ -1,17 +1,18 @@
 //  /*
 //
 //  Project: TripApp
-//  File: TabMenu.swift
+//  File: TabMenuPlus.swift
 //  Created by: Elaidzha Shchukin
-//  Date: 20.06.2023
+//  Date: 25.06.2023
 //
 //  S
 //
 //  */
 
+
 import SwiftUI
 
-struct TabMenu: View {
+struct TabMenuPlus: View {
     
     @State var index = 0
     
@@ -19,22 +20,22 @@ struct TabMenu: View {
         
         VStack {
             Spacer()
-            CustomTabs(index: self.$index)
+            CustomTab(index: self.$index)
         }
         .background(Color.white)
         .edgesIgnoringSafeArea(.top)
     }
 }
 
-struct TabMenu_Previews: PreviewProvider {
+struct TabMenuPlus_Previews: PreviewProvider {
     static var previews: some View {
         self.devices {
-            TabMenu()
+            TabMenuPlus()
         }
     }
 }
 
-struct CustomTabs : View {
+struct CustomTab : View {
     
     @Binding var index : Int
     
@@ -84,11 +85,11 @@ struct CustomTabs : View {
         .padding(.leading, 60)
         .padding(.top, 35)
         .background(Color(toElement: .maingrey))
-        .clipShape(CustomShape())
+        .clipShape(CShape())
     }
 }
 
-struct CustomShape : Shape {
+struct CShape : Shape {
     func path(in rect: CGRect) -> Path {
         
         return Path { path in
@@ -98,7 +99,8 @@ struct CustomShape : Shape {
             path.addLine(to: CGPoint(x: rect.width, y: rect.width))
             path.addLine(to: CGPoint(x: rect.width, y: 35))
             
-            path.addArc(center: CGPoint(x: (rect.width / 2) - 4, y: 35), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: true)
+            path.addArc(center: CGPoint(x: (rect.width / 2) - 4, y: 35), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
         }
     }
 }
+
