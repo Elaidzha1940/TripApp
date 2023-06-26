@@ -12,6 +12,9 @@
 import SwiftUI
 
 struct PassesC: View {
+    
+    @State var passesCat: String = ""
+    
     var body: some View {
         
         VStack {
@@ -26,6 +29,20 @@ struct PassesC: View {
                 .frame(height: 1)
                 .background(Color.black)
             
+            Spacer()
+            
+            VStack {
+                
+                TextField("Название перевала", text: $passesCat)
+                    .textFieldStyle(.roundedBorder)
+                    .frame(width: 350, height: 50)
+                    .border(Color(toText: .blacktext))
+                    .font(.custom("Inter-Regular", size: 15))
+                    .cornerRadius(10)
+                    //.foregroundColor(Color(toText: .textfieldgrey))
+            }
+            .padding()
+            Spacer()
         }
     }
 }

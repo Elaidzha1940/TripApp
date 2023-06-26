@@ -26,23 +26,23 @@ struct CustomTextField: View {
                 .foregroundColor(Color(toText: .textfieldgrey))
                 .padding()
             
-            Button(action: {
-                if textisApproopriate() {
-                    saveText()
-                }
-            }, label: {
-                Text("Войти".uppercased())
-                    .font(.custom("Inter-Medium", size: 20))
-                    .frame(width: 340, height: 50)
-                    .background(textisApproopriate() ? Color(toElement: .mainblue) : Color(toElement: .buttoncolor))
-                    .foregroundColor(Color(toText: .mainblack))
-                    .cornerRadius(60)
-                    .padding()
-            })
-            
-            ForEach(dataArray, id: \.self) { data in
-                Text(data)
-            }
+//            Button(action: {
+//                if textisApproopriate() {
+//                    saveText()
+//                }
+//            }, label: {
+//                Text("Войти".uppercased())
+//                    .font(.custom("Inter-Medium", size: 20))
+//                    .frame(width: 340, height: 50)
+//                    .background(textisApproopriate() ? Color(toElement: .mainblue) : Color(toElement: .buttoncolor))
+//                    .foregroundColor(Color(toText: .mainblack))
+//                    .cornerRadius(60)
+//                    .padding()
+//            })
+//
+//            ForEach(dataArray, id: \.self) { data in
+//                Text(data)
+//            }
         }
     }
     
