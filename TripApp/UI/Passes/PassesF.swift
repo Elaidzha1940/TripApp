@@ -1,7 +1,7 @@
 //  /*
 //
 //  Project: TripApp
-//  File: PassesC.swift
+//  File: PassesF.swift
 //  Created by: Elaidzha Shchukin
 //  Date: 26.06.2023
 //
@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-struct PassesC: View {
+struct PassesF: View {
     var body: some View {
         
         VStack {
@@ -30,10 +30,10 @@ struct PassesC: View {
     }
 }
 
-struct PassesC_Previews: PreviewProvider {
+struct PassesF_Previews: PreviewProvider {
     static var previews: some View {
         self.devices {
-            PassesC()
+            PassesF()
         }
     }
 }

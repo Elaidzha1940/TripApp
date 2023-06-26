@@ -10,6 +10,7 @@
 		E40861632A4202F60045BC22 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40861622A4202F60045BC22 /* CustomTextField.swift */; };
 		E4AB34802A48A8F8003051EF /* TabMenuPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */; };
 		E4AB34832A49DE9C003051EF /* PassesC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34822A49DE9C003051EF /* PassesC.swift */; };
+		E4AB34852A49DEF8003051EF /* PassesF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34842A49DEF8003051EF /* PassesF.swift */; };
 		E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B390CC2A34E98E002D0520 /* TripAppApp.swift */; };
 		E4B390CF2A34E98E002D0520 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B390CE2A34E98E002D0520 /* OnBoarding.swift */; };
 		E4B390D12A34E98F002D0520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B390D02A34E98F002D0520 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		E40861622A4202F60045BC22 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuPlus.swift; sourceTree = "<group>"; };
 		E4AB34822A49DE9C003051EF /* PassesC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesC.swift; sourceTree = "<group>"; };
+		E4AB34842A49DEF8003051EF /* PassesF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesF.swift; sourceTree = "<group>"; };
 		E4B390C92A34E98E002D0520 /* TripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B390CC2A34E98E002D0520 /* TripAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAppApp.swift; sourceTree = "<group>"; };
 		E4B390CE2A34E98E002D0520 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				E4AB34822A49DE9C003051EF /* PassesC.swift */,
+				E4AB34842A49DEF8003051EF /* PassesF.swift */,
 			);
 			path = Passes;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				E4DEA2292A40A1980051F4BA /* UserProfile.swift in Sources */,
 				E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */,
 				E4DEA2272A3F3D080051F4BA /* Fonts.swift in Sources */,
+				E4AB34852A49DEF8003051EF /* PassesF.swift in Sources */,
 				E4F2CBDC2A41EBA70068AEF1 /* TabMenu.swift in Sources */,
 				E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */,
 				E4F2CBDF2A41EC160068AEF1 /* LoginView.swift in Sources */,
