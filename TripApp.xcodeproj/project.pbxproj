@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E40861632A4202F60045BC22 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40861622A4202F60045BC22 /* CustomTextField.swift */; };
 		E4AB34802A48A8F8003051EF /* TabMenuPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */; };
+		E4AB34832A49DE9C003051EF /* PassesC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34822A49DE9C003051EF /* PassesC.swift */; };
 		E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B390CC2A34E98E002D0520 /* TripAppApp.swift */; };
 		E4B390CF2A34E98E002D0520 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B390CE2A34E98E002D0520 /* OnBoarding.swift */; };
 		E4B390D12A34E98F002D0520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B390D02A34E98F002D0520 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		E40861622A4202F60045BC22 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuPlus.swift; sourceTree = "<group>"; };
+		E4AB34822A49DE9C003051EF /* PassesC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesC.swift; sourceTree = "<group>"; };
 		E4B390C92A34E98E002D0520 /* TripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B390CC2A34E98E002D0520 /* TripAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAppApp.swift; sourceTree = "<group>"; };
 		E4B390CE2A34E98E002D0520 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4AB34812A49DD46003051EF /* Passes */ = {
+			isa = PBXGroup;
+			children = (
+				E4AB34822A49DE9C003051EF /* PassesC.swift */,
+			);
+			path = Passes;
+			sourceTree = "<group>";
+		};
 		E4B390C02A34E98E002D0520 = {
 			isa = PBXGroup;
 			children = (
@@ -178,10 +188,11 @@
 				E4F2CBDA2A41EB8A0068AEF1 /* Main */,
 				E4F2CBDD2A41EBD20068AEF1 /* Auth_login */,
 				E4F2CBE02A41ECE20068AEF1 /* Representations */,
-				E4F2CBE12A41EE0D0068AEF1 /* Compinents */,
+				E4F2CBE12A41EE0D0068AEF1 /* Components */,
 				E4B390CE2A34E98E002D0520 /* OnBoarding.swift */,
 				E4DEA2282A40A1980051F4BA /* UserProfile.swift */,
 				E4C812922A4492F8007D3F20 /* PassList.swift */,
+				E4AB34812A49DD46003051EF /* Passes */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -212,12 +223,12 @@
 			path = Representations;
 			sourceTree = "<group>";
 		};
-		E4F2CBE12A41EE0D0068AEF1 /* Compinents */ = {
+		E4F2CBE12A41EE0D0068AEF1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				E40861622A4202F60045BC22 /* CustomTextField.swift */,
 			);
-			path = Compinents;
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */,
 				E4F2CBDF2A41EC160068AEF1 /* LoginView.swift in Sources */,
 				E4AB34802A48A8F8003051EF /* TabMenuPlus.swift in Sources */,
+				E4AB34832A49DE9C003051EF /* PassesC.swift in Sources */,
 				E4DEA2182A3F386B0051F4BA /* AssetConvertable.swift in Sources */,
 				E4C812932A4492F8007D3F20 /* PassList.swift in Sources */,
 				E4DEA20E2A3F35730051F4BA /* Color.swift in Sources */,

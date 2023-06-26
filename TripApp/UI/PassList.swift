@@ -40,7 +40,7 @@ struct PassList: View {
                 .foregroundColor(.black.opacity(0.2))
             
             Text("Нажмите на + чтобы добавить перевал")
-                .frame(width: 250)
+                .frame(width: 220)
                 .font(.custom("Inter-Regular", size: 24))
                 .foregroundColor(Color(toText: .mainblack))
                 .multilineTextAlignment(.center)
@@ -54,9 +54,7 @@ struct PassList: View {
                     .multilineTextAlignment(.center)
             })
             .padding()
-            
-            Spacer()
-            
+                        
             VStack {
                 
                 TabMenu()
