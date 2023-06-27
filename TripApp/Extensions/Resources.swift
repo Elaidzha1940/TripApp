@@ -21,7 +21,7 @@ extension Resources {
     }
     
     enum Icon: String, AssetConvertable {
-        case cube, ellipce, polygon, whiteplus
+        case cube, ellipce, polygon, whiteplus, iletter
     }
     
     enum Categories: String, AssetConvertable {

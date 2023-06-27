@@ -36,6 +36,20 @@ struct PassesC: View {
                 }
             }
             .padding()
+            
+            HStack {
+                
+              Text("Категория перевала")
+                
+                ZStack {
+                    Circle()
+                        .frame(width: 20, height:  12)
+                    Color(toElement: .mainblue)
+
+                    Image("icon-iletter")
+                }
+            }
+            
             Spacer()
         }
     }
