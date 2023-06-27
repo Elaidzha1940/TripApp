@@ -13,7 +13,7 @@ import SwiftUI
 
 struct PassesC: View {
     
-    @State var passesCat: String = ""
+    @State private var firstName: String = ""
     
     var body: some View {
         
@@ -32,14 +32,10 @@ struct PassesC: View {
             Spacer()
             
             VStack {
-                
-                TextField("Название перевала", text: $passesCat)
-                    .textFieldStyle(.roundedBorder)
-                    .frame(width: 350, height: 50)
-                    .border(Color(toText: .blacktext))
-                    .font(.custom("Inter-Regular", size: 15))
-                    .cornerRadius(10)
-                    //.foregroundColor(Color(toText: .textfieldgrey))
+                Group {
+                    FloatingLabelTextField(placeholder: "Название перевала", text: self.$firstName)
+                    
+                }
             }
             .padding()
             Spacer()

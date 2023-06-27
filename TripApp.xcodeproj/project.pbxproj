@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E40861632A4202F60045BC22 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40861622A4202F60045BC22 /* CustomTextField.swift */; };
+		E40861632A4202F60045BC22 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */; };
 		E4AB34802A48A8F8003051EF /* TabMenuPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */; };
 		E4AB34832A49DE9C003051EF /* PassesC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34822A49DE9C003051EF /* PassesC.swift */; };
 		E4AB34852A49DEF8003051EF /* PassesF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34842A49DEF8003051EF /* PassesF.swift */; };
+		E4AB34872A4B096C003051EF /* FloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34862A4B096C003051EF /* FloatingLabelTextField.swift */; };
+		E4AB34892A4B0A2A003051EF /* FloatingBorderLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34882A4B0A2A003051EF /* FloatingBorderLabelTextField.swift */; };
 		E4B390CD2A34E98E002D0520 /* TripAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B390CC2A34E98E002D0520 /* TripAppApp.swift */; };
 		E4B390CF2A34E98E002D0520 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B390CE2A34E98E002D0520 /* OnBoarding.swift */; };
 		E4B390D12A34E98F002D0520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B390D02A34E98F002D0520 /* Assets.xcassets */; };
@@ -34,10 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E40861622A4202F60045BC22 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuPlus.swift; sourceTree = "<group>"; };
 		E4AB34822A49DE9C003051EF /* PassesC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesC.swift; sourceTree = "<group>"; };
 		E4AB34842A49DEF8003051EF /* PassesF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesF.swift; sourceTree = "<group>"; };
+		E4AB34862A4B096C003051EF /* FloatingLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextField.swift; sourceTree = "<group>"; };
+		E4AB34882A4B0A2A003051EF /* FloatingBorderLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingBorderLabelTextField.swift; sourceTree = "<group>"; };
 		E4B390C92A34E98E002D0520 /* TripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B390CC2A34E98E002D0520 /* TripAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAppApp.swift; sourceTree = "<group>"; };
 		E4B390CE2A34E98E002D0520 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
@@ -229,7 +233,9 @@
 		E4F2CBE12A41EE0D0068AEF1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E40861622A4202F60045BC22 /* CustomTextField.swift */,
+				E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */,
+				E4AB34862A4B096C003051EF /* FloatingLabelTextField.swift */,
+				E4AB34882A4B0A2A003051EF /* FloatingBorderLabelTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -309,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E40861632A4202F60045BC22 /* CustomTextField.swift in Sources */,
+				E4AB34892A4B0A2A003051EF /* FloatingBorderLabelTextField.swift in Sources */,
+				E4AB34872A4B096C003051EF /* FloatingLabelTextField.swift in Sources */,
+				E40861632A4202F60045BC22 /* CustomTextFieldStyle.swift in Sources */,
 				E4DEA2112A3F36150051F4BA /* PreviewProviderOption.swift in Sources */,
 				E4B390CF2A34E98E002D0520 /* OnBoarding.swift in Sources */,
 				E4DEA20C2A3F32CD0051F4BA /* Text.swift in Sources */,
