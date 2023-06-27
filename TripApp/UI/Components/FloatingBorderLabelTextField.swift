@@ -18,7 +18,8 @@ struct FloatingBorderLabelTextField: View {
     var body: some View {
         ZStack (alignment: .leading) {
             Text(placeholder)
-                .font(.system(self.text.isEmpty ? .title2 : .title3, design: .rounded))
+                .font(.custom("Inter-Regulat", size: 16))
+                //.font(.system(self.text.isEmpty ? .title2 : .title3, design: .rounded))
                 .foregroundColor(.black.opacity(0.5))
                 .padding(.horizontal, self.text.isEmpty ? 0 : 10)
                 .background(Color.white)
@@ -26,7 +27,8 @@ struct FloatingBorderLabelTextField: View {
                 .scaleEffect(self.text.isEmpty ? 1 : 0.9, anchor: .leading)
             
             TextField("", text: self.$text)
-                .font(.system(.title2, design: .rounded))
+                .font(.custom("Inter-Regular", size: 16))
+                //.font(.system(.title2, design: .rounded))
                 .foregroundColor(.black)
         }
         .animation(.easeOut, value: !text.isEmpty)
@@ -42,10 +44,11 @@ struct FloatingBorderLabelTextField: View {
 struct FloatingBorderLabelTextField_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            FloatingBorderLabelTextField(placeholder: "First Name", text: .constant(""))
-            FloatingBorderLabelTextField(placeholder: "First Name", text: .constant("Abdelrahman"))
+            FloatingBorderLabelTextField(placeholder: "", text: .constant(""))
+            
         }
-        .previewLayout(.sizeThatFits)
+        .font(.custom("Inter-Regular", size: 16))
+        //.previewLayout(.sizeThatFits)
         .padding()
     }
 }

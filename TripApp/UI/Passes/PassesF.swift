@@ -12,6 +12,9 @@
 import SwiftUI
 
 struct PassesF: View {
+    
+    @State private var passesF: String = ""
+
     var body: some View {
         
         VStack {
@@ -25,6 +28,15 @@ struct PassesF: View {
             Divider()
                 .frame(height: 1)
                 .background(Color.black)
+            
+            VStack {
+                Group {
+                    FloatingLabelTextField(placeholder: "Название перевала", text: self.$passesF)
+                    
+                }
+            }
+            .padding()
+            Spacer()
             
         }
     }
