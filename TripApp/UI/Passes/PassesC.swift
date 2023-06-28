@@ -256,12 +256,111 @@ struct PassesC: View {
                 //
                 VStack(alignment: .leading) {
                     
+                    HStack {
                         Text("Дата рождения")
                             .font(.custom("Inter-Regular", size: 20))
-                            
+                    }
+                    .padding()
                 
+                    HStack {
+                        ZStack {
+                            Image("system-calendar")
+                                .foregroundColor(
+                                    Color.init(toText: .bluecom)
+                                )
+                                .offset(x: -75)
+                        }
+                        .frame(width: 210, height: 60)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke()
+                        )
+                        .foregroundColor(Color(toElement: .mainblue))
+                        .padding(.horizontal)
+                        
+                        ZStack(alignment: .center) {
+                            Text("Сегодня (22.05.2022)")
+                                .multilineTextAlignment(.center)
+                                .font(.custom("Inter-Regular", size: 15))
+                                .foregroundColor(
+                                    Color.init(toText: .main)
+                                )
+                            
+                        }
+                        .frame(width: 140, height: 60)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color(toElement: .mainblue))
+                        )
+                        .padding(.horizontal)
+                    }
                 }
+                
+                VStack(alignment: .leading) {
                     
+                    HStack {
+                        Text("Координаты")
+                            .font(.custom("Inter-Regular", size: 20))
+                    }
+                    .padding(.leading, 35)
+                    .padding(
+                    )
+                    Divider()
+                    
+                    HStack {
+                        ZStack {
+                            Image("system-point")
+                                .foregroundColor(
+                                    Color.init(toText: .bluecom)
+                                )
+                                .offset(x: -75)
+                            
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text("N 55 36.4999")
+                                    Text("E 3718.232")
+                                }
+                                .font(.custom("Inter-Regular", size: 16))
+                                .foregroundColor(
+                                    Color.init(toText: .bluecom)
+                                )
+
+                            }
+                        }
+                        .frame(width: 210, height: 60)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke()
+                        )
+                        .foregroundColor(Color(toElement: .mainblue))
+                        .padding(.horizontal)
+                        
+                        ZStack(alignment: .center) {
+                            Text("1800 m")
+                                .multilineTextAlignment(.center)
+                                .font(.custom("Inter-Regular", size: 15))
+                                .foregroundColor(
+                                    Color.init(toText: .mainblack)
+                                )
+                            Text("Высота")
+                                .font(.custom("Inter-Regular", size: 12))
+                                .foregroundColor(
+                                    Color.init(toText: .greytext)
+                                )
+                                .offset(x: -40, y: -18)
+                            
+                        }
+                        .frame(width: 140, height: 60)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke()
+                        )
+                        .foregroundColor(Color(toElement: .mainblue))
+                        .padding(.horizontal)
+                    }
+                    .padding()
+                    .padding(.horizontal)
+                }
             }
             .padding()
         }
