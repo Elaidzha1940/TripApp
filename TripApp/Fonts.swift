@@ -16,6 +16,7 @@ struct Fonts {
         static let regular = "Inter-Regular"
         static let medium = "Inter-Medium"
         static let bold = "Inter-Bold"
+        static let extralight = "Inter-ExtraLight"
     }
 }
 

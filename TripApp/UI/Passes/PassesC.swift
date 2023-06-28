@@ -20,7 +20,7 @@ struct PassesC: View {
         VStack {
             HStack {
                 Text("Добавление перевала")
-                    .font(.custom("Inter-Bold", size: 20))
+                    .font(.custom(Fonts.Inter.bold, size: 20))
                     .foregroundColor(Color(toText: .mainblack))
                     .padding()
             }
@@ -43,8 +43,8 @@ struct PassesC: View {
                 HStack(spacing: 30) {
                     
                     Text("Категория перевала")
-                        .font(.custom("Inter-Regular", size: 20))
-                    
+                        .font(.custom(Fonts.Inter.regular, size: 20))
+
                         Spacer()
                     
                     ZStack {
@@ -61,7 +61,7 @@ struct PassesC: View {
                 HStack(spacing: 30) {
                     ZStack {
                         Text("H/K")
-                            .font(.custom("Inter-Regular", size: 16))
+                            .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
                                 Color.init(toText: .bluecom)
                             )
@@ -76,7 +76,7 @@ struct PassesC: View {
                     
                     ZStack {
                         Text("1А")
-                            .font(.custom("Inter-Regular", size: 16))
+                            .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
                                 Color.init(toText: .bluecom)
                             )
@@ -91,7 +91,7 @@ struct PassesC: View {
                     
                     ZStack {
                         Text("1Б")
-                            .font(.custom("Inter-Regular", size: 16))
+                            .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
                                 Color.init(toText: .bluecom)
                             )
@@ -111,7 +111,7 @@ struct PassesC: View {
                     
                     ZStack {
                         Text("2А")
-                            .font(.custom("Inter-Regular", size: 16))
+                            .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
                                 Color.init(toText: .bluecom)
                             )
@@ -125,7 +125,7 @@ struct PassesC: View {
                     
                     ZStack {
                         Text("2Б")
-                            .font(.custom("Inter-Regular", size: 16))
+                            .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
                                 Color.init(toText: .bluecom)
                             )
@@ -139,7 +139,7 @@ struct PassesC: View {
                     
                     ZStack {
                         Text("3А")
-                            .font(.custom("Inter-Regular", size: 16))
+                            .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
                                 Color.init(toText: .bluecom)
                             )
@@ -153,7 +153,7 @@ struct PassesC: View {
                     
                     ZStack {
                         Text("3Б")
-                            .font(.custom("Inter-Regular", size: 16))
+                            .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
                                 Color.init(toText: .bluecom)
                             )
@@ -172,11 +172,11 @@ struct PassesC: View {
                     HStack(spacing: 33) {
                         VStack {
                             Text("Добавить")
-                                .font(.custom("Inter-Medium", size: 14))
-                            
+                                .font(.custom(Fonts.Inter.medium, size: 14))
+
                             ZStack {
                                 Image("system-star")
-                                    .font(.custom("Inter-Regular", size: 16))
+                                    .font(.custom(Fonts.Inter.regular, size: 16))
                                     .foregroundColor(
                                         Color.init(toText: .bluecom)
                                     )
@@ -192,7 +192,7 @@ struct PassesC: View {
                         
                         ZStack {
                             Text("не уверен")
-                                .font(.custom("Inter-Regular", size: 16))
+                                .font(.custom(Fonts.Inter.regular, size: 16))
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
                                 )
@@ -207,7 +207,7 @@ struct PassesC: View {
                         
                         ZStack {
                             Text("оценочно")
-                                .font(.custom("Inter-Regular", size: 16))
+                                .font(.custom(Fonts.Inter.regular, size: 16))
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
                                 )
@@ -227,7 +227,7 @@ struct PassesC: View {
                 HStack(alignment: .firstTextBaseline) {
                     
                     Text("Сложность сущесвтенно величится в зависимости от погодных условий(снегопад, внезапное обледение склонов и пр.)")
-                        .font(.custom("Inter-Regular", size: 10))
+                        .font(.custom(Fonts.Inter.regular, size: 10))
                         .frame(width: 130, height: 85)
                         .foregroundColor(
                             Color.init(toText: .bluecom)
@@ -239,7 +239,7 @@ struct PassesC: View {
                     Spacer()
                     
                     Text("Если вы не прошли этот перевал")
-                        .font(.custom("Inter-Regular", size: 10))
+                        .font(.custom(Fonts.Inter.regular, size: 10))
                         .frame(width: 120, height: 75)
                         .foregroundColor(
                             Color.init(toText: .bluecom)
@@ -258,7 +258,7 @@ struct PassesC: View {
                     
                     HStack {
                         Text("Дата рождения")
-                            .font(.custom("Inter-Regular", size: 20))
+                            .font(.custom(Fonts.Inter.regular, size: 20))
                     }
                     .padding()
                 
@@ -281,7 +281,7 @@ struct PassesC: View {
                         ZStack(alignment: .center) {
                             Text("Сегодня (22.05.2022)")
                                 .multilineTextAlignment(.center)
-                                .font(.custom("Inter-Regular", size: 15))
+                                .font(.custom(Fonts.Inter.regular, size: 15))
                                 .foregroundColor(
                                     Color.init(toText: .main)
                                 )
@@ -300,7 +300,7 @@ struct PassesC: View {
                     
                     HStack {
                         Text("Координаты")
-                            .font(.custom("Inter-Regular", size: 20))
+                            .font(.custom(Fonts.Inter.regular, size: 20))
                     }
                     .padding(.leading, 35)
                     .padding(
@@ -320,7 +320,7 @@ struct PassesC: View {
                                     Text("N 55 36.4999")
                                     Text("E 3718.232")
                                 }
-                                .font(.custom("Inter-Regular", size: 16))
+                                .font(.custom(Fonts.Inter.regular, size: 16))
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
                                 )
@@ -338,12 +338,12 @@ struct PassesC: View {
                         ZStack(alignment: .center) {
                             Text("1800 m")
                                 .multilineTextAlignment(.center)
-                                .font(.custom("Inter-Regular", size: 15))
+                                .font(.custom(Fonts.Inter.regular, size: 15))
                                 .foregroundColor(
                                     Color.init(toText: .mainblack)
                                 )
                             Text("Высота")
-                                .font(.custom("Inter-Regular", size: 12))
+                                .font(.custom(Fonts.Inter.regular, size: 12))
                                 .foregroundColor(
                                     Color.init(toText: .greytext)
                                 )
@@ -367,24 +367,31 @@ struct PassesC: View {
                 VStack(alignment: .leading) {
                     
                     Text("Фото")
-                        .font(.custom("Inter-Regular", size: 20))
+                        .font(.custom(Fonts.Inter.regular, size: 20))
                         .foregroundColor(
                             Color.init(toText: .mainblack)
                         )
                     
                     Text("Добавление фото")
-                    
+                        .font(.custom(Fonts.Inter.extralight, size: 19))
+
                     HStack {
                         
                         Image("")
                         
                         Text("из галереи")
+                            .font(.custom(Fonts.Inter.bold, size: 16))
+
                         
                         Image("")
                         
                         Text("с камеры")
+                            .font(.custom(Fonts.Inter.bold, size: 16))
+
+
                     }
                 }
+               // .padding()
             }
             .padding()
         }
