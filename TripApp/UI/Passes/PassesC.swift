@@ -361,6 +361,30 @@ struct PassesC: View {
                     .padding()
                     .padding(.horizontal)
                 }
+                
+                //
+                
+                VStack(alignment: .leading) {
+                    
+                    Text("Фото")
+                        .font(.custom("Inter-Regular", size: 20))
+                        .foregroundColor(
+                            Color.init(toText: .mainblack)
+                        )
+                    
+                    Text("Добавление фото")
+                    
+                    HStack {
+                        
+                        Image("")
+                        
+                        Text("из галереи")
+                        
+                        Image("")
+                        
+                        Text("с камеры")
+                    }
+                }
             }
             .padding()
         }
