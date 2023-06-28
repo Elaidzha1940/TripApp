@@ -56,7 +56,6 @@ struct PassesC: View {
                     .foregroundColor(Color(toElement: .mainblue))
                 }
                 .padding(5)
-                .padding(.bottom)
                 .padding(.horizontal, 30)
                 
                 HStack(spacing: 30) {
@@ -192,7 +191,7 @@ struct PassesC: View {
                         }
                         
                         ZStack {
-                            Image("system-star")
+                            Text("не уверен")
                                 .font(.custom("Inter-Regular", size: 16))
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
@@ -207,7 +206,7 @@ struct PassesC: View {
                         .padding(.horizontal)
                         
                         ZStack {
-                            Image("system-star")
+                            Text("оценочно")
                                 .font(.custom("Inter-Regular", size: 16))
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
@@ -222,11 +221,47 @@ struct PassesC: View {
                         .padding(.horizontal)
                     }
                     .padding()
+                    .padding(.top)
                 }
+                
+                HStack(alignment: .firstTextBaseline) {
+                    
+                    Text("Сложность сущесвтенно величится в зависимости от погодных условий(снегопад, внезапное обледение склонов и пр.)")
+                        .font(.custom("Inter-Regular", size: 10))
+                        .frame(width: 130, height: 85)
+                        .foregroundColor(
+                            Color.init(toText: .bluecom)
+                        )
+                        .multilineTextAlignment(.leading)
+                        .padding(.leading)
 
+                    
+                    Spacer()
+                    
+                    Text("Если вы не прошли этот перевал")
+                        .font(.custom("Inter-Regular", size: 10))
+                        .frame(width: 120, height: 75)
+                        .foregroundColor(
+                            Color.init(toText: .bluecom)
+                        )
+                        .multilineTextAlignment(.leading)
+                        .padding(.leading)
+                    
+                }
+                .offset(y: -30)
+                .padding(.horizontal, 30)
                 
-                Spacer()
+                Divider()
                 
+                //
+                VStack(alignment: .leading) {
+                    
+                        Text("Дата рождения")
+                            .font(.custom("Inter-Regular", size: 20))
+                            
+                
+                }
+                    
             }
             .padding()
         }
