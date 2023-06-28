@@ -26,7 +26,7 @@ struct UserProfile: View {
             
             VStack {
                 Text("Добро пожаловать")
-                    .font(.custom("Inter-Medium", size: 20))
+                    .font(.custom(Fonts.Inter.medium, size: 20))
                     .fontWeight(.thin)
                     .foregroundColor(Color(toText: .mainblack))
                 
@@ -37,7 +37,7 @@ struct UserProfile: View {
                 // ScrollView {
                 
                 Text("Давайте знакомиться")
-                    .font(.custom("Inter-Regular", size: 28))
+                    .font(.custom(Fonts.Inter.regular, size: 28))
                     .foregroundColor(Color(toText: .mainblue))
             }
             
@@ -50,7 +50,7 @@ struct UserProfile: View {
                 Text(" - в качестве первопроходителей перевала, если он новый")
                 Text(" - в базу туристов ФСТР")
             }
-            .font(.custom("Inter-Medium", size: 18))
+            .font(.custom(Fonts.Inter.medium, size: 18))
             .foregroundColor(Color(toText: .blacktext))
             .frame(width: 290)
             .padding()
@@ -60,41 +60,41 @@ struct UserProfile: View {
                 TextField("", text: $surnameFieldText)
                     .textFieldStyle(.roundedBorder)
                     .border(Color(toText: .greytext))
-                    .font(.custom("Inter-Regular", size: 15))
+                    .font(.custom(Fonts.Inter.regular, size: 15))
                     .foregroundColor(Color(toText: .textfieldgrey))
                 
                 Text("Фамилия")
-                    .font(.custom("Inter-Regular", size: 9))
+                    .font(.custom(Fonts.Inter.regular, size: 9))
                     .foregroundColor(Color(toText: .greytext))
                 
                 TextField("", text: $nameFieldText)
                     .textFieldStyle(.roundedBorder)
                     .border(Color(toText: .greytext))
-                    .font(.custom("Inter-Regular", size: 15))
+                    .font(.custom(Fonts.Inter.regular, size: 15))
                     .foregroundColor(Color(toText: .textfieldgrey))
                 
                 Text("Имя")
-                    .font(.custom("Inter-Regular", size: 9))
+                    .font(.custom(Fonts.Inter.regular, size: 9))
                     .foregroundColor(Color(toText: .greytext))
                 
                 TextField("yourmail.com", text: $mailFieldText)
                     .textFieldStyle(.roundedBorder)
                     .border(Color(toText: .greytext))
-                    .font(.custom("Inter-Regular", size: 15))
+                    .font(.custom(Fonts.Inter.regular, size: 15))
                     .foregroundColor(Color(toText: .textfieldgrey))
                 
                 Text("E-mail будет логином и основным средством связи с вами")
-                    .font(.custom("Inter-Regular", size: 9))
+                    .font(.custom(Fonts.Inter.regular, size: 9))
                     .foregroundColor(Color(toText: .greytext))
                 
                 TextField("+7_", text: $telFieldText)
                     .textFieldStyle(.roundedBorder)
                     .border(Color(toText: .greytext))
-                    .font(.custom("Inter-Regular", size: 15))
+                    .font(.custom(Fonts.Inter.regular, size: 15))
                     .foregroundColor(Color(toText: .textfieldgrey))
                 
                 Text("По желанию")
-                    .font(.custom("Inter-Regular", size: 9))
+                    .font(.custom(Fonts.Inter.regular, size: 9))
                     .foregroundColor(Color(toText: .greytext))
                 
                 
@@ -102,11 +102,11 @@ struct UserProfile: View {
                 TextField("ссылка на соцсети", text: $netFieldText)
                     .textFieldStyle(.roundedBorder)
                     .border(Color(toText: .greytext))
-                    .font(.custom("Inter-Regular", size: 15))
+                    .font(.custom(Fonts.Inter.regular, size: 15))
                     .foregroundColor(Color(toText: .textfieldgrey))
                 
                 Text("Фамилия")
-                    .font(.custom("Inter-Regular", size: 9))
+                    .font(.custom(Fonts.Inter.regular, size: 9))
                     .foregroundColor(Color(toText: .textfieldgrey))
                 
                 
@@ -126,14 +126,14 @@ struct UserProfile: View {
             .padding()
             
             Text("Используя приложение, вы даете согласие ФСТР на")
-                .font(.custom("Inter-Medium", size: 12))
+                .font(.custom(Fonts.Inter.medium, size: 12))
                 .foregroundColor(Color(toText: .mainblack))
             
             Button {
                 //action
             } label: {
                 Text("обработку персональный данных")
-                    .font(.custom("Inter-Medium", size: 14))
+                    .font(.custom(Fonts.Inter.medium, size: 14))
                     .underline()
                     .foregroundColor(Color(toText: .mainblue))
                     .multilineTextAlignment(.center)

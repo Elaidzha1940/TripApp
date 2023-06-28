@@ -18,7 +18,7 @@ struct PassList: View {
         
             HStack {
                 Text("Лоханкин Васисуалий")
-                    .font(.custom("Inter-Regular", size: 24))
+                    .font(.custom(Fonts.Inter.regular, size: 24))
                 //.fontWeight(.thin)
                     .foregroundColor(Color(toText: .mainblack))
                     .padding(.horizontal, 20)
@@ -41,14 +41,14 @@ struct PassList: View {
             
             Text("Нажмите на + чтобы добавить перевал")
                 .frame(width: 220)
-                .font(.custom("Inter-Regular", size: 24))
+                .font(.custom(Fonts.Inter.regular, size: 24))
                 .foregroundColor(Color(toText: .mainblack))
                 .multilineTextAlignment(.center)
                 .padding()
             
             Link(destination: URL(string: "https://tssr.ru/main/structura/2720/")!, label: {
                 Text("Посмотреть базу перевалов")
-                    .font(.custom("Inter-Medium", size: 16))
+                    .font(.custom(Fonts.Inter.medium, size: 16))
                     .underline()
                     .foregroundColor(Color(toText: .mainblue))
                     .multilineTextAlignment(.center)

@@ -30,7 +30,7 @@ struct OnBoarding: View {
                     HStack {
                         
                         Text("#ПОХОДЫ #СВОБОДА #ПРЕОДОЛЕНИЕ #ОКРЫТИЯ")
-                            .font(.custom("Inter-Medium", size: 20))
+                            .font(.custom(Fonts.Inter.medium, size: 20))
                             .foregroundColor(Color(toText: .main))
                             .frame(width: 363, height: 143)
                         
@@ -39,13 +39,13 @@ struct OnBoarding: View {
                     .padding()
                     
                     Text("ОПИШИ ПЕРЕВАЛ")
-                        .font(.custom("Inter-Medium", size: 36))
+                        .font(.custom(Fonts.Inter.medium, size: 36))
                         .foregroundColor(Color(toText: .main))
                         .padding()
                     
                     
                     Text("Наполняем каталог перевалов вместе")
-                        .font(.custom("Inter-Medium", size: 16))
+                        .font(.custom(Fonts.Inter.medium, size: 16))
                         .foregroundColor(Color(toText: .main))
                         .padding()
                     
@@ -53,7 +53,7 @@ struct OnBoarding: View {
                         //action
                     } label: {
                         Text("Войти")
-                            .font(.custom("Inter-Medium", size: 20))
+                            .font(.custom(Fonts.Inter.medium, size: 20))
                             .foregroundColor(Color(toText: .mainblack))
                             .frame(width: 340, height: 50)
                             .background(Color(toElement: .mainwhite))

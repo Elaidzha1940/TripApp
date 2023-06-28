@@ -5,7 +5,7 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 27.06.2023
 //
-//  S
+//  Status: #In progress | #Decorated
 //
 //  */
 
@@ -18,7 +18,7 @@ struct FloatingBorderLabelTextField: View {
     var body: some View {
         ZStack (alignment: .leading) {
             Text(placeholder)
-                .font(.custom("Inter-Regulat", size: 16))
+                .font(.custom(Fonts.Inter.regular, size: 16))
                 //.font(.system(self.text.isEmpty ? .title2 : .title3, design: .rounded))
                 .foregroundColor(.black.opacity(0.5))
                 .padding(.horizontal, self.text.isEmpty ? 0 : 10)
@@ -27,7 +27,7 @@ struct FloatingBorderLabelTextField: View {
                 .scaleEffect(self.text.isEmpty ? 1 : 0.9, anchor: .leading)
             
             TextField("", text: self.$text)
-                .font(.custom("Inter-Regular", size: 16))
+                .font(.custom(Fonts.Inter.regular, size: 16))
                 //.font(.system(.title2, design: .rounded))
                 .foregroundColor(.black)
         }
@@ -47,7 +47,7 @@ struct FloatingBorderLabelTextField_Previews: PreviewProvider {
             FloatingBorderLabelTextField(placeholder: "", text: .constant(""))
             
         }
-        .font(.custom("Inter-Regular", size: 16))
+        .font(.custom(Fonts.Inter.regular, size: 16))
         //.previewLayout(.sizeThatFits)
         .padding()
     }

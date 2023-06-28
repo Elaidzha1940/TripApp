@@ -5,7 +5,7 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 27.06.2023
 //
-//  S
+//  Status: #In progress | #Decorated
 //
 //  */
 
@@ -25,7 +25,7 @@ struct FloatingLabelTextField: View {
                 //.font(.system(self.text.isEmpty ? .title2 : .title3, design: .rounded))
             
             TextField("", text: self.$text)
-                .font(.custom("Inter-Regular", size: 16))
+                .font(.custom(Fonts.Inter.regular, size: 16))
                 //.fontWeight(.regular)
                 .foregroundColor(.black)
         }
