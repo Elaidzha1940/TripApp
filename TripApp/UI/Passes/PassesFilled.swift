@@ -12,8 +12,35 @@
 import SwiftUI
 
 struct PassesFilled: View {
+    
+    @State private var passesFilled: String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            HStack {
+                Text("Добавление перевала")
+                    .font(.custom(Fonts.Inter.bold, size: 20))
+                    .foregroundColor(Color(toText: .mainblack))
+                    .padding()
+            }
+            
+            Divider()
+                .frame(height: 1)
+                .background(Color.black)
+            
+            ScrollView {
+                VStack {
+                    Group {
+                        FloatingLabelTextField(placeholder: "Название перевала", text: self.$passesFilled)
+                        
+                    }
+                    .padding(.trailing)
+                }
+                .padding(.horizontal, 40)
+                .padding(.bottom, 20)
+            }
+        }
     }
 }
 
