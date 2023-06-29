@@ -37,7 +37,7 @@ struct FloatingLabelTextField: View {
                 .stroke(text.isEmpty ? .black.opacity(0.5) : .black, lineWidth: 2)
         )
         .cornerRadius(10)
-        .frame(height: 55)
+        .frame(height: 75)
     }
 }
 
