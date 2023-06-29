@@ -39,13 +39,13 @@ struct PassesC: View {
                 }
                 .padding(.horizontal, 40)
                 .padding(.bottom, 20)
-           
+                
                 HStack(spacing: 30) {
                     
                     Text("Категория перевала")
                         .font(.custom(Fonts.Inter.regular, size: 20))
-
-                        Spacer()
+                    
+                    Spacer()
                     
                     ZStack {
                         Circle()
@@ -173,7 +173,7 @@ struct PassesC: View {
                         VStack {
                             Text("Добавить")
                                 .font(.custom(Fonts.Inter.medium, size: 14))
-
+                            
                             ZStack {
                                 Image("system-star")
                                     .font(.custom(Fonts.Inter.regular, size: 16))
@@ -234,7 +234,7 @@ struct PassesC: View {
                         )
                         .multilineTextAlignment(.leading)
                         .padding(.leading)
-
+                    
                     
                     Spacer()
                     
@@ -261,7 +261,7 @@ struct PassesC: View {
                             .font(.custom(Fonts.Inter.regular, size: 20))
                     }
                     .padding()
-                
+                    
                     HStack {
                         ZStack {
                             Image("system-calendar")
@@ -303,8 +303,8 @@ struct PassesC: View {
                             .font(.custom(Fonts.Inter.regular, size: 20))
                     }
                     .padding(.leading, 35)
-                    .padding(
-                    )
+                    .padding()
+                    
                     Divider()
                     
                     HStack {
@@ -324,7 +324,7 @@ struct PassesC: View {
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
                                 )
-
+                                
                             }
                         }
                         .frame(width: 210, height: 60)
@@ -360,38 +360,51 @@ struct PassesC: View {
                     }
                     .padding()
                     .padding(.horizontal)
-                }
-                
-                //
-                
-                VStack(alignment: .leading) {
                     
                     Text("Фото")
                         .font(.custom(Fonts.Inter.regular, size: 20))
                         .foregroundColor(
                             Color.init(toText: .mainblack)
                         )
-                    
-                    Text("Добавление фото")
-                        .font(.custom(Fonts.Inter.extralight, size: 19))
+                        .padding(.leading, 35)
+                        .padding()
 
-                    HStack {
-                        
-                        Image("")
-                        
-                        Text("из галереи")
-                            .font(.custom(Fonts.Inter.bold, size: 16))
-
-                        
-                        Image("")
-                        
-                        Text("с камеры")
-                            .font(.custom(Fonts.Inter.bold, size: 16))
-
-
-                    }
                 }
-               // .padding()
+                
+                //
+                
+                VStack(alignment: .center, spacing: 20) {
+                                
+                    Text("Добавление фото")
+                        .multilineTextAlignment(.center)
+                        .font(.custom(Fonts.Inter.extralight, size: 18))
+                        .foregroundColor(
+                            Color.init(toText: .mainblack)
+                        )
+                        .fontWeight(.thin)
+                    
+                    
+                    HStack(spacing: 30) {
+                        
+                        VStack {
+                            Image("system-scrap")
+                            
+                            Text("из галереи")
+                                .font(.custom(Fonts.Inter.bold, size: 16))
+                        }
+                        .padding(.horizontal, 10)
+                        
+                        VStack {
+                            Image("system-photo")
+                            
+                            Text("с камеры")
+                                .font(.custom(Fonts.Inter.bold, size: 16))
+                        }
+                        .padding(.horizontal, 15)
+                    }
+                    .padding()
+                }
+                .padding()
             }
             .padding()
         }

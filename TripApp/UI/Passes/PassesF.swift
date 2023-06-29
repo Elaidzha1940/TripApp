@@ -362,10 +362,49 @@ struct PassesF: View {
                     }
                     .padding()
                     .padding(.horizontal)
+                    
+                    Text("Фото")
+                        .font(.custom(Fonts.Inter.regular, size: 20))
+                        .foregroundColor(
+                            Color.init(toText: .mainblack)
+                        )
+                        .padding(.leading, 35)
+                        .padding()
                 }
                 
                 //
-                
+                VStack(alignment: .center, spacing: 20) {
+                                
+                    Text("Добавление фото")
+                        .multilineTextAlignment(.center)
+                        .font(.custom(Fonts.Inter.extralight, size: 18))
+                        .foregroundColor(
+                            Color.init(toText: .mainblack)
+                        )
+                        .fontWeight(.thin)
+                    
+                    
+                    HStack(spacing: 30) {
+                        
+                        VStack {
+                            Image("system-scrap")
+                            
+                            Text("из галереи")
+                                .font(.custom(Fonts.Inter.bold, size: 16))
+                        }
+                        .padding(.horizontal, 10)
+                        
+                        VStack {
+                            Image("system-photo")
+                            
+                            Text("с камеры")
+                                .font(.custom(Fonts.Inter.bold, size: 16))
+                        }
+                        .padding(.horizontal, 15)
+                    }
+                    .padding()
+                }
+                .padding()
             }
             .padding()
         }
