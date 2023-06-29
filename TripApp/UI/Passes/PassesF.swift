@@ -182,7 +182,7 @@ struct PassesF: View {
                                 .font(.custom(Fonts.Inter.medium, size: 14))
                             
                             ZStack {
-                                Image("system-star")
+                                Image("system-starw")
                                     .font(.custom(Fonts.Inter.regular, size: 16))
                                     .foregroundColor(
                                         Color.init(toText: .main)
@@ -193,25 +193,19 @@ struct PassesF: View {
                                 RoundedRectangle(cornerRadius: 8)
                                     .fill(Color(toElement: .mainblue))
                             )
-//                            .background(
-//                                RoundedRectangle(cornerRadius: 8)
-//                                    .stroke()
-//                            )
-//                            .foregroundColor(Color(toElement: .greycom))
-//                            .padding(.horizontal)
                         }
                         
                         ZStack {
                             Text("не уверен")
                                 .font(.custom(Fonts.Inter.regular, size: 16))
                                 .foregroundColor(
-                                    Color.init(toText: .bluecom)
+                                    Color.init(toText: .main)
                                 )
                         }
                         .frame(width: 95, height: 45)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
-                                .stroke()
+                                .fill(Color(toElement: .mainblue))
                         )
                         .foregroundColor(Color(toElement: .greycom))
                         .padding(.horizontal)

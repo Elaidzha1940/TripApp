@@ -16,12 +16,12 @@ enum Resources {}
 extension Resources {
     
     enum System: String, AssetConvertable {
-        case burger, calendar, logo, photo, search, scrap, right, star, point, iletterblue
+        case burger, calendar, logo, photo, search, scrap, right, star, point, starw
         
     }
     
     enum Icon: String, AssetConvertable {
-        case cube, ellipce, polygon, whiteplus, iletter
+        case cube, ellipce, polygon, whiteplus, iletter, iletterblue
     }
     
     enum Categories: String, AssetConvertable {
