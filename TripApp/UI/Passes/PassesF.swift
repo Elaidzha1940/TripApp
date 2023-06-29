@@ -14,7 +14,7 @@ import SwiftUI
 struct PassesF: View {
     
     @State private var passesF: String = ""
-
+    
     var body: some View {
         
         VStack {
@@ -39,13 +39,13 @@ struct PassesF: View {
                 }
                 .padding(.horizontal, 40)
                 .padding(.bottom, 20)
-           
+                
                 HStack(spacing: 30) {
                     
                     Text("Категория перевала")
                         .font(.custom(Fonts.Inter.regular, size: 20))
-
-                        Spacer()
+                    
+                    Spacer()
                     
                     ZStack {
                         Circle()
@@ -74,11 +74,13 @@ struct PassesF: View {
                     .foregroundColor(Color(toElement: .greycom))
                     .padding(.horizontal, 30)
                     
+                    //
+                    
                     ZStack {
                         Text("1А")
                             .font(.custom(Fonts.Inter.regular, size: 16))
                             .foregroundColor(
-                                Color.init(toText: .bluecom)
+                                Color.init(toText: .main)
                             )
                     }
                     .frame(width: 70, height: 45)
@@ -86,8 +88,12 @@ struct PassesF: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke()
                     )
-                    .foregroundColor(Color(toElement: .greycom))
-                    .padding(.horizontal, 30)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(Color(toElement: .mainblue))
+                    )
+                    
+                    //
                     
                     ZStack {
                         Text("1Б")
@@ -170,24 +176,29 @@ struct PassesF: View {
                 VStack {
                     
                     HStack(spacing: 33) {
+                        
                         VStack {
                             Text("Добавить")
                                 .font(.custom(Fonts.Inter.medium, size: 14))
-
+                            
                             ZStack {
                                 Image("system-star")
                                     .font(.custom(Fonts.Inter.regular, size: 16))
                                     .foregroundColor(
-                                        Color.init(toText: .bluecom)
+                                        Color.init(toText: .main)
                                     )
                             }
                             .frame(width: 70, height: 45)
                             .background(
                                 RoundedRectangle(cornerRadius: 8)
-                                    .stroke()
+                                    .fill(Color(toElement: .mainblue))
                             )
-                            .foregroundColor(Color(toElement: .greycom))
-                            .padding(.horizontal)
+//                            .background(
+//                                RoundedRectangle(cornerRadius: 8)
+//                                    .stroke()
+//                            )
+//                            .foregroundColor(Color(toElement: .greycom))
+//                            .padding(.horizontal)
                         }
                         
                         ZStack {
@@ -222,9 +233,9 @@ struct PassesF: View {
                     }
                     .padding()
                     .padding(.top)
-
+                    
                 }
-
+                
                 HStack(alignment: .firstTextBaseline) {
                     
                     Text("Сложность сущесвтенно величится в зависимости от погодных условий(снегопад, внезапное обледение склонов и пр.)")
@@ -235,7 +246,7 @@ struct PassesF: View {
                         )
                         .multilineTextAlignment(.leading)
                         .padding(.leading)
-
+                    
                     
                     Spacer()
                     
@@ -253,7 +264,7 @@ struct PassesF: View {
                 .padding(.horizontal, 30)
                 
                 Divider()
-            
+                
                 //
                 
                 VStack(alignment: .leading) {
@@ -263,7 +274,7 @@ struct PassesF: View {
                             .font(.custom(Fonts.Inter.regular, size: 20))
                     }
                     .padding()
-                
+                    
                     HStack {
                         ZStack {
                             Image("system-calendar")
@@ -326,7 +337,7 @@ struct PassesF: View {
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
                                 )
-
+                                
                             }
                         }
                         .frame(width: 210, height: 60)
@@ -374,7 +385,7 @@ struct PassesF: View {
                 
                 //
                 VStack(alignment: .center, spacing: 20) {
-                                
+                    
                     Text("Добавление фото")
                         .multilineTextAlignment(.center)
                         .font(.custom(Fonts.Inter.extralight, size: 18))

@@ -39,6 +39,25 @@ struct PassesFilled: View {
                 }
                 .padding(.horizontal, 40)
                 .padding(.bottom, 20)
+                
+                //
+                HStack(spacing: 30) {
+                    
+                    Text("Категория перевала")
+                        .font(.custom(Fonts.Inter.regular, size: 20))
+
+                        Spacer()
+                    
+                    ZStack {
+                        Circle()
+                            .stroke()
+                        Image("icon-iletterblue")
+                    }
+                    .frame(width: 20, height: 25)
+                    .foregroundColor(Color(toElement: .mainblue))
+                }
+                .padding(5)
+                .padding(.horizontal, 30)
             }
         }
     }

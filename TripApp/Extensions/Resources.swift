@@ -16,7 +16,7 @@ enum Resources {}
 extension Resources {
     
     enum System: String, AssetConvertable {
-        case burger, calendar, logo, photo, search, scrap, right, star, point
+        case burger, calendar, logo, photo, search, scrap, right, star, point, iletterblue
         
     }
     
