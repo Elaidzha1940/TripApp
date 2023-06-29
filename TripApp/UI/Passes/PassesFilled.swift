@@ -19,6 +19,8 @@ struct PassesFilled: View {
 
 struct PassesFilled_Previews: PreviewProvider {
     static var previews: some View {
-        PassesFilled()
+        self.devices {
+            PassesFilled()
+        }
     }
 }
