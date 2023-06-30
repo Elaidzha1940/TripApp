@@ -360,6 +360,19 @@ struct PassesFilled: View {
                 }
                 
                 //
+                
+                VStack(alignment: .leading) {
+                    
+                    Rectangle()
+                        .frame(width: 360, height: 280)
+                        .foregroundColor(Color(toElement: .greycom))
+
+                    Text("Поясните что на фото")
+                        .font(.custom(Fonts.Inter.regular, size: 20))
+                        .foregroundColor(
+                            Color.init(toText: .blacktext)
+                        )
+                }
             }
             
             HStack(spacing: 1.0) {
