@@ -62,7 +62,8 @@ struct OnBoarding: View {
                     }
                     
                     Spacer()
-                    HStack(spacing: 1.0){
+                    
+                    HStack(spacing: 1.0) {
                         ZStack {
                             Rectangle()
                                 .frame(width: 430, height: 50)

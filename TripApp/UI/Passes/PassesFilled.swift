@@ -14,10 +14,12 @@ import SwiftUI
 struct PassesFilled: View {
     
     @State private var passesFilled: String = ""
-
+    @State var selectedDate1 = Date()
+    
     var body: some View {
         
         VStack {
+            
             HStack {
                 Text("Добавление перевала")
                     .font(.custom(Fonts.Inter.bold, size: 20))
@@ -43,7 +45,7 @@ struct PassesFilled: View {
                     Text("Категория перевала")
                         .font(.custom(Fonts.Inter.regular, size: 20))
                         .padding()
-                        Spacer()
+                    Spacer()
                     
                     ZStack {
                         Circle()
@@ -225,9 +227,159 @@ struct PassesFilled: View {
                     .padding()
                     .padding(.top)
                     
+                    VStack(alignment: .leading) {
+                        
+                        HStack {
+                            Text("Дата рождения")
+                                .font(.custom(Fonts.Inter.regular, size: 20))
+                        }
+                        .padding()
+                        
+                        HStack {
+                            ZStack(alignment: .leading) {
+                                
+                                DatePicker("",
+                                           selection: $selectedDate1,
+                                           displayedComponents: .date)
+                                .labelsHidden()
+                                .frame(width: 220, height: 60)
+                                .foregroundColor(Color(toText: .mainblack))
+                                .offset(x: 15)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke()
+                                        .foregroundColor(Color(toElement: .mainblack))
+                                )
+                                Image(Resources.System.smallcalendar.assetName)
+                                    .foregroundColor(Color(toElement: .mainblue))
+                                    .frame(width: 15)
+                                    .padding()
+                            }
+                            .padding(.horizontal)
+                            
+                            ZStack(alignment: .center) {
+                                VStack {
+                                    Text("Сегодня")
+                                        .multilineTextAlignment(.center)
+                                        .font(.custom(Fonts.Inter.regular, size: 15))
+                                        .foregroundColor(
+                                            Color.init(toText: .blacktext)
+                                        )
+                                    Text("(22.05.2022)")
+                                        .multilineTextAlignment(.center)
+                                        .font(.custom(Fonts.Inter.regular, size: 13))
+                                        .foregroundColor(
+                                            Color.init(toText: .blacktext).opacity(0.6)
+                                        )
+                                }
+                                
+                            }
+                            .frame(width: 140, height: 60)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke()
+                            )
+                            .foregroundColor(Color(toElement: .mainblue))
+                            .padding(.horizontal)
+                        }
+                    }
+                    
+                    VStack(alignment: .leading) {
+                        
+                        HStack {
+                            Text("Координаты")
+                                .font(.custom(Fonts.Inter.regular, size: 20))
+                        }
+                        .padding(.leading, 35)
+                        .padding(
+                        )
+                        Divider()
+                        
+                        HStack {
+                            ZStack {
+                                Image("system-point")
+                                    .foregroundColor(
+                                        Color.init(toText: .bluecom)
+                                    )
+                                    .offset(x: -75)
+                                
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        Text("N 55 36.4999")
+                                        Text("E 3718.232")
+                                    }
+                                    .font(.custom(Fonts.Inter.regular, size: 16))
+                                    .foregroundColor(
+                                        Color.init(toText: .bluecom)
+                                    )
+                                    
+                                }
+                            }
+                            .frame(width: 220, height: 60)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke()
+                            )
+                            .foregroundColor(Color(toElement: .mainblue))
+                            .padding(.horizontal)
+                            
+                            ZStack(alignment: .center) {
+                                Text("1800 m")
+                                    .multilineTextAlignment(.center)
+                                    .font(.custom(Fonts.Inter.regular, size: 15))
+                                    .foregroundColor(
+                                        Color.init(toText: .mainblack)
+                                    )
+                                Text("Высота")
+                                    .font(.custom(Fonts.Inter.regular, size: 12))
+                                    .foregroundColor(
+                                        Color.init(toText: .greytext)
+                                    )
+                                    .offset(x: -40, y: -18)
+                                
+                            }
+                            .frame(width: 140, height: 60)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke()
+                            )
+                            .foregroundColor(Color(toElement: .mainblue))
+                            .padding(.horizontal)
+                        }
+                        .padding()
+                        .padding(.horizontal)
+                        
+                        Text("Фото")
+                            .font(.custom(Fonts.Inter.regular, size: 20))
+                            .foregroundColor(
+                                Color.init(toText: .mainblack)
+                            )
+                            .padding(.leading, 35)
+                            .padding()
+                    }
                 }
                 
+                //
             }
+            
+            HStack(spacing: 1.0) {
+                ZStack {
+                    Rectangle()
+                        .frame(width: 430, height: 50)
+                        .foregroundColor(Color(toElement: .maingrey))
+                    
+                    HStack(spacing: 40) {
+                        Image("icon-polygon")
+                            .padding(.horizontal, 30)
+                        Image("icon-ellipse")
+                            .padding(.horizontal, 30)
+                        Image("icon-cube")
+                            .padding(.horizontal, 30)
+                        
+                    }
+                }
+            }
+            .offset(y: 34)
         }
     }
 }
