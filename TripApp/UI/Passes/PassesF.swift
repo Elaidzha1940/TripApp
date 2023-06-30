@@ -34,7 +34,6 @@ struct PassesF: View {
                 VStack {
                     Group {
                         FloatingLabelTextField(placeholder: "Название перевала", text: self.$passesF)
-                        
                     }
                     .padding(.trailing)
                 }
@@ -109,7 +108,6 @@ struct PassesF: View {
                     .padding(.horizontal, 30)
                 }
                 .padding()
-                
                 
                 HStack(spacing: 37) {
                     
@@ -263,8 +261,6 @@ struct PassesF: View {
                 
                 Divider()
                 
-                //
-                
                 VStack(alignment: .leading) {
                     
                     HStack {
@@ -274,40 +270,24 @@ struct PassesF: View {
                     .padding()
                     
                     HStack {
-//                        ZStack {
-//                            Image("system-calendar")
-//                                .foregroundColor(
-//                                    Color.init(toText: .bluecom)
-//                                )
-//                                .offset(x: -75)
-//                        }
-//                        .frame(width: 210, height: 60)
-//                        .background(
-//                            RoundedRectangle(cornerRadius: 8)
-//                                .stroke()
-//                        )
-//                        .foregroundColor(Color(toElement: .mainblue))
-//                        .padding(.horizontal)
-                    
-                    ZStack(alignment: .leading) {
                         
-                        DatePicker("",
-                                   selection: $selectedDate,
-                                   displayedComponents: .date)
-                        .labelsHidden()
-                        .frame(width: 220, height: 60)
-                        .background(
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke()
-                        )
-                        Image(Resources.System.calendar.assetName)
-                            .foregroundColor(Color(toElement: .mainblue))
-                            //.resizable()
-                            //.scaledToFit()
-                            .frame(width: 15)
-                            .padding()
-                    }
-                    .padding(.horizontal)
+                        ZStack(alignment: .leading) {
+                            
+                            DatePicker("",
+                                       selection: $selectedDate,
+                                       displayedComponents: .date)
+                            .labelsHidden()
+                            .frame(width: 220, height: 60)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke()
+                            )
+                            Image(Resources.System.calendar.assetName)
+                                .foregroundColor(Color(toElement: .mainblue))
+                                .frame(width: 15)
+                                .padding()
+                        }
+                        .padding(.horizontal)
                         
                         ZStack(alignment: .center) {
                             Text("Сегодня (22.05.2022)")
@@ -401,7 +381,6 @@ struct PassesF: View {
                         .padding()
                 }
                 
-                //
                 VStack(alignment: .center, spacing: 20) {
                     
                     Text("Добавление фото")
@@ -411,7 +390,6 @@ struct PassesF: View {
                             Color.init(toText: .mainblack)
                         )
                         .fontWeight(.thin)
-                    
                     
                     HStack(spacing: 30) {
                         

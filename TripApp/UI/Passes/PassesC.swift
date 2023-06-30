@@ -33,7 +33,6 @@ struct PassesC: View {
                 VStack {
                     Group {
                         FloatingLabelTextField(placeholder: "Название перевала", text: self.$passesC)
-                        
                     }
                     .padding(.trailing)
                 }
@@ -105,7 +104,6 @@ struct PassesC: View {
                     .padding(.horizontal, 30)
                 }
                 .padding()
-                
                 
                 HStack(spacing: 37) {
                     
@@ -253,7 +251,6 @@ struct PassesC: View {
                 
                 Divider()
                 
-                //
                 VStack(alignment: .leading) {
                     
                     HStack {
@@ -264,13 +261,17 @@ struct PassesC: View {
                     
                     HStack {
                         ZStack {
-                            Image("system-calendar")
-                                .foregroundColor(
-                                    Color.init(toText: .bluecom)
-                                )
-                                .offset(x: -75)
+                            Button {
+                                //action
+                            } label: {
+                                Image("system-calendar")
+                            }
+                            .foregroundColor(
+                                Color.init(toText: .bluecom)
+                            )
+                            .offset(x: -75)
                         }
-                        .frame(width: 210, height: 60)
+                        .frame(width: 220, height: 60)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke()
@@ -324,10 +325,9 @@ struct PassesC: View {
                                 .foregroundColor(
                                     Color.init(toText: .bluecom)
                                 )
-                                
                             }
                         }
-                        .frame(width: 210, height: 60)
+                        .frame(width: 220, height: 60)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke()
@@ -368,13 +368,11 @@ struct PassesC: View {
                         )
                         .padding(.leading, 35)
                         .padding()
-
+                    
                 }
                 
-                //
-                
                 VStack(alignment: .center, spacing: 20) {
-                                
+                    
                     Text("Добавление фото")
                         .multilineTextAlignment(.center)
                         .font(.custom(Fonts.Inter.extralight, size: 18))
@@ -382,7 +380,6 @@ struct PassesC: View {
                             Color.init(toText: .mainblack)
                         )
                         .fontWeight(.thin)
-                    
                     
                     HStack(spacing: 30) {
                         
