@@ -40,7 +40,6 @@ struct PassesFilled: View {
                 .padding(.horizontal, 40)
                 .padding(.bottom, 20)
                 
-                //
                 HStack(spacing: 30) {
                     
                     Text("Категория перевала")

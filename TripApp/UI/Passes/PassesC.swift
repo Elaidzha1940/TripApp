@@ -37,13 +37,12 @@ struct PassesC: View {
                     .padding(.trailing)
                 }
                 .padding(.horizontal, 40)
-                .padding(.bottom, 20)
                 
-                HStack(spacing: 30) {
+                HStack {
                     
                     Text("Категория перевала")
                         .font(.custom(Fonts.Inter.regular, size: 20))
-                    
+                        .padding()
                     Spacer()
                     
                     ZStack {
@@ -53,8 +52,8 @@ struct PassesC: View {
                     }
                     .frame(width: 20, height: 25)
                     .foregroundColor(Color(toElement: .mainblue))
+                    .padding()
                 }
-                .padding(5)
                 .padding(.horizontal, 30)
                 
                 HStack(spacing: 30) {

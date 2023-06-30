@@ -38,13 +38,12 @@ struct PassesF: View {
                     .padding(.trailing)
                 }
                 .padding(.horizontal, 40)
-                .padding(.bottom, 20)
                 
-                HStack(spacing: 30) {
+                HStack {
                     
                     Text("Категория перевала")
                         .font(.custom(Fonts.Inter.regular, size: 20))
-                    
+                        .padding()
                     Spacer()
                     
                     ZStack {
@@ -54,8 +53,8 @@ struct PassesF: View {
                     }
                     .frame(width: 20, height: 25)
                     .foregroundColor(Color(toElement: .mainblue))
+                    .padding()
                 }
-                .padding(5)
                 .padding(.horizontal, 30)
                 
                 HStack(spacing: 30) {
@@ -270,7 +269,6 @@ struct PassesF: View {
                     .padding()
                     
                     HStack {
-                        
                         ZStack(alignment: .leading) {
                             
                             DatePicker("",
@@ -278,9 +276,12 @@ struct PassesF: View {
                                        displayedComponents: .date)
                             .labelsHidden()
                             .frame(width: 220, height: 60)
+                            .foregroundColor(Color(toText: .mainblack))
+                            .offset(x: 15)
                             .background(
                                 RoundedRectangle(cornerRadius: 8)
                                     .stroke()
+                                    .foregroundColor(Color(toElement: .mainblack))
                             )
                             Image(Resources.System.calendar.assetName)
                                 .foregroundColor(Color(toElement: .mainblue))
