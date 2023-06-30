@@ -14,6 +14,7 @@ import SwiftUI
 struct PassesF: View {
     
     @State private var passesF: String = ""
+    @State var selectedDate = Date()
     
     var body: some View {
         
@@ -74,8 +75,6 @@ struct PassesF: View {
                     .foregroundColor(Color(toElement: .greycom))
                     .padding(.horizontal, 30)
                     
-                    //
-                    
                     ZStack {
                         Text("1А")
                             .font(.custom(Fonts.Inter.regular, size: 16))
@@ -92,8 +91,7 @@ struct PassesF: View {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color(toElement: .mainblue))
                     )
-                    
-                    //
+                    .padding(.horizontal, 30)
                     
                     ZStack {
                         Text("1Б")
@@ -193,6 +191,7 @@ struct PassesF: View {
                                 RoundedRectangle(cornerRadius: 8)
                                     .fill(Color(toElement: .mainblue))
                             )
+                            .padding(.horizontal)
                         }
                         
                         ZStack {
@@ -208,6 +207,7 @@ struct PassesF: View {
                                 .fill(Color(toElement: .mainblue))
                         )
                         .foregroundColor(Color(toElement: .greycom))
+                        .padding(.leading, 5)
                         .padding(.horizontal)
                         
                         ZStack {
@@ -241,8 +241,12 @@ struct PassesF: View {
                         .multilineTextAlignment(.leading)
                         .padding(.leading)
                     
-                    
-                    Spacer()
+                    Text("Если вы не уверены в оценке категории")
+                        .font(.custom(Fonts.Inter.regular, size: 10))
+                        .frame(width: 120, height: 75)
+                        .foregroundColor(
+                            Color.init(toText: .bluecom)
+                        )
                     
                     Text("Если вы не прошли этот перевал")
                         .font(.custom(Fonts.Inter.regular, size: 10))
@@ -270,20 +274,40 @@ struct PassesF: View {
                     .padding()
                     
                     HStack {
-                        ZStack {
-                            Image("system-calendar")
-                                .foregroundColor(
-                                    Color.init(toText: .bluecom)
-                                )
-                                .offset(x: -75)
-                        }
-                        .frame(width: 210, height: 60)
+//                        ZStack {
+//                            Image("system-calendar")
+//                                .foregroundColor(
+//                                    Color.init(toText: .bluecom)
+//                                )
+//                                .offset(x: -75)
+//                        }
+//                        .frame(width: 210, height: 60)
+//                        .background(
+//                            RoundedRectangle(cornerRadius: 8)
+//                                .stroke()
+//                        )
+//                        .foregroundColor(Color(toElement: .mainblue))
+//                        .padding(.horizontal)
+                    
+                    ZStack(alignment: .leading) {
+                        
+                        DatePicker("",
+                                   selection: $selectedDate,
+                                   displayedComponents: .date)
+                        .labelsHidden()
+                        .frame(width: 220, height: 60)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke()
                         )
-                        .foregroundColor(Color(toElement: .mainblue))
-                        .padding(.horizontal)
+                        Image(Resources.System.calendar.assetName)
+                            .foregroundColor(Color(toElement: .mainblue))
+                            //.resizable()
+                            //.scaledToFit()
+                            .frame(width: 15)
+                            .padding()
+                    }
+                    .padding(.horizontal)
                         
                         ZStack(alignment: .center) {
                             Text("Сегодня (22.05.2022)")
@@ -334,7 +358,7 @@ struct PassesF: View {
                                 
                             }
                         }
-                        .frame(width: 210, height: 60)
+                        .frame(width: 220, height: 60)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke()
