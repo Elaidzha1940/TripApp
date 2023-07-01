@@ -359,8 +359,6 @@ struct PassesFilled: View {
                     }
                 }
                 
-                //
-                
                 VStack(alignment: .leading) {
                     
                     Rectangle()
@@ -372,6 +370,9 @@ struct PassesFilled: View {
                         .foregroundColor(
                             Color.init(toText: .blacktext)
                         )
+                    
+                    //
+                    
                 }
             }
             
