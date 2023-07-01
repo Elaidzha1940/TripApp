@@ -365,31 +365,51 @@ struct PassesFilled: View {
                         .frame(width: 360, height: 280)
                         .foregroundColor(Color(toElement: .greycom))
                         .padding(.horizontal)
-
+                    
                     Text("Поясните что на фото")
                         .font(.custom(Fonts.Inter.regular, size: 20))
                         .foregroundColor(
                             Color.init(toText: .blacktext)
                         )
+                        .padding(3)
                     
-                    //
-                    
-                    ZStack(alignment: .center) {
-                        Text("Перевал соединяет озеро Верхнее Крпекое ")
-                            .multilineTextAlignment(.center)
-                            .font(.custom(Fonts.Inter.regular, size: 15))
-                            .foregroundColor(
-                                Color.init(toText: .mainblack)
-                            )
+                    ZStack {
+                        ZStack {
+                            Button {
+                                //action
+                            } label: {
+                                Image("system-micro")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 20, height: 25)
+                                    .cornerRadius(8)
+                                
+                            }
+                            .frame(width: 25, height: 35)
+                            .cornerRadius(8)
+                            .foregroundColor(Color(toElement: .mainblue))
+                            .padding()
+                            .offset(x: 160, y: -55)
+                        }
                         
+                        ZStack(alignment: .center) {
+                            
+                            Text("Перевал соединяет озеро Верхнее Крпекое и реку Тихая. ри подьеме открываются красивые виды а озеро Крепкое. После подъема более плоский участок.")
+                                .multilineTextAlignment(.leading)
+                                .font(.custom(Fonts.Inter.regular, size: 18))
+                                .foregroundColor(
+                                    Color.init(toText: .mainblack)
+                                )
+                                .padding()
+                            
+                        }
+                        .frame(width: 360, height: 160)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color(toElement: .mainblue), lineWidth: 3)
+                        )
+                        .padding(.horizontal)
                     }
-                    .frame(width: 360, height: 170)
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke()
-                    )
-                    .foregroundColor(Color(toElement: .mainblue))
-                    .padding(.horizontal)
                     
                 }
             }
