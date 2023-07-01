@@ -364,6 +364,7 @@ struct PassesFilled: View {
                     Rectangle()
                         .frame(width: 360, height: 280)
                         .foregroundColor(Color(toElement: .greycom))
+                        .padding(.horizontal)
 
                     Text("Поясните что на фото")
                         .font(.custom(Fonts.Inter.regular, size: 20))
@@ -372,6 +373,23 @@ struct PassesFilled: View {
                         )
                     
                     //
+                    
+                    ZStack(alignment: .center) {
+                        Text("Перевал соединяет озеро Верхнее Крпекое ")
+                            .multilineTextAlignment(.center)
+                            .font(.custom(Fonts.Inter.regular, size: 15))
+                            .foregroundColor(
+                                Color.init(toText: .mainblack)
+                            )
+                        
+                    }
+                    .frame(width: 360, height: 170)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke()
+                    )
+                    .foregroundColor(Color(toElement: .mainblue))
+                    .padding(.horizontal)
                     
                 }
             }
