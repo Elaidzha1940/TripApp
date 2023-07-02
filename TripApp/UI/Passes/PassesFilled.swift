@@ -386,9 +386,10 @@ struct PassesFilled: View {
                                 
                             }
                             .frame(width: 25, height: 35)
-                            .cornerRadius(8)
-                            .foregroundColor(Color(toElement: .mainblue))
-                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(Color(toElement: .mainblue))
+                            )
                             .offset(x: 160, y: -55)
                         }
                         
