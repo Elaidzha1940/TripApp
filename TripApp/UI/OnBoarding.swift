@@ -55,7 +55,7 @@ struct OnBoarding: View {
                         Text("Войти")
                             .font(.custom(Fonts.Inter.medium, size: 20))
                             .foregroundColor(Color(toText: .mainblack))
-                            .frame(width: 340, height: 50)
+                            .frame(width: 350, height: 50)
                             .background(Color(toElement: .mainwhite))
                             .cornerRadius(60)
                             .padding()

@@ -422,22 +422,32 @@ struct PassesFilled: View {
                         
                         VStack(alignment: .leading, spacing: 20) {
                             
-                                Text("Направление")
+                            Text("Направление")
                                 .font(.custom(Fonts.Inter.regular, size: 20))
                                 .foregroundColor(
                                     Color.init(toText: .mainblack)
                                 )
-                                
-                                Text("Восток")
+                            
+                            Text("Восток")
                                 .font(.custom(Fonts.Inter.regular, size: 16))
                                 .foregroundColor(
                                     Color.init(toText: .greytext)
                                 )
-
-                                
                         }
                     }
                     .padding()
+                    
+                }
+                Button {
+                    //action
+                } label: {
+                    Text("Войти")
+                        .font(.custom(Fonts.Inter.medium, size: 20))
+                        .foregroundColor(Color(toText: .main))
+                        .frame(width: 360, height: 50)
+                        .background(Color(toElement: .mainblue))
+                        .cornerRadius(60)
+                        .padding()
                 }
             }
             
