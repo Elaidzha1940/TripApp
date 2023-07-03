@@ -363,6 +363,7 @@ struct PassesFilled: View {
                     
                     Rectangle()
                         .frame(width: 360, height: 280)
+                        .cornerRadius(9)
                         .foregroundColor(Color(toElement: .greycom))
                         .padding(.horizontal)
                     
@@ -412,6 +413,31 @@ struct PassesFilled: View {
                         .padding(.horizontal)
                     }
                     
+                    HStack {
+                        
+                        Rectangle()
+                            .frame(width: 120, height: 110)
+                            .cornerRadius(9)
+                            .foregroundColor(.gray)
+                        
+                        VStack(alignment: .leading, spacing: 20) {
+                            
+                                Text("Направление")
+                                .font(.custom(Fonts.Inter.regular, size: 20))
+                                .foregroundColor(
+                                    Color.init(toText: .mainblack)
+                                )
+                                
+                                Text("Восток")
+                                .font(.custom(Fonts.Inter.regular, size: 16))
+                                .foregroundColor(
+                                    Color.init(toText: .greytext)
+                                )
+
+                                
+                        }
+                    }
+                    .padding()
                 }
             }
             
