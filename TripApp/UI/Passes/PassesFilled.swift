@@ -361,11 +361,11 @@ struct PassesFilled: View {
                 
                 VStack(alignment: .leading) {
                     
-                    Rectangle()
-                        .frame(width: 360, height: 280)
-                        .cornerRadius(9)
-                        .foregroundColor(Color(toElement: .greycom))
-                        .padding(.horizontal)
+                    Image("system-mountain")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 420, height: 320)
+
                     
                     Text("Поясните что на фото")
                         .font(.custom(Fonts.Inter.regular, size: 20))
