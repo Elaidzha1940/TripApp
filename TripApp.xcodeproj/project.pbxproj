@@ -211,10 +211,10 @@
 				E4F2CBDD2A41EBD20068AEF1 /* Auth_login */,
 				E4F2CBE02A41ECE20068AEF1 /* Representations */,
 				E4F2CBE12A41EE0D0068AEF1 /* Components */,
-				E4EA94492A56FE0C0052414F /* Camera */,
 				E4B390CE2A34E98E002D0520 /* OnBoarding.swift */,
 				E4DEA2282A40A1980051F4BA /* UserProfile.swift */,
 				E4C812922A4492F8007D3F20 /* PassList.swift */,
+				E4EA94492A56FE0C0052414F /* Camera */,
 				E4AB34812A49DD46003051EF /* Passes */,
 			);
 			path = UI;

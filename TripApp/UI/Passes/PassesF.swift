@@ -10,11 +10,15 @@
 //  */
 
 import SwiftUI
+import PhotosUI
 
 struct PassesF: View {
     
     @State private var passesF: String = ""
     @State var selectedDate = Date()
+    
+    @State var selectedItems: [PhotosPickerItem] = []
+    @State var data: Data?
     
     var body: some View {
         
@@ -395,20 +399,60 @@ struct PassesF: View {
                     HStack(spacing: 30) {
                         
                         VStack {
-                            Image("system-scrap")
-                            
-                            Text("из галереи")
-                                .font(.custom(Fonts.Inter.bold, size: 16))
+                            //
+                            VStack {
+                                if let data = data, let uiimage = UIImage(data: data) {
+                                    Image(uiImage: uiimage)
+                                        .resizable()
+                                }
+                                Spacer()
+                                PhotosPicker(
+                                    selection: $selectedItems,
+                                    matching: .images
+                                ) {
+                                    VStack {
+                                        Image("system-scrap")
+                                        
+                                        Text("из галереи")
+                                            .font(.custom(Fonts.Inter.bold, size: 16))
+                                            .foregroundColor(Color(toText: .mainblack))
+
+                                    }
+                                }
+                                .onChange(of: selectedItems) { newValue in
+                                    guard let item = selectedItems.first else {
+                                        return
+                                    }
+                                    item.loadTransferable(type: Data.self) {result in
+                                        switch result {
+                                        case .success(let data):
+                                            if let data = data {
+                                                self.data = data
+                                            } else {
+                                                print("Data is nil")
+                                            }
+                                        case .failure(let failure):
+                                            fatalError("\(failure)")
+                                        }
+                                    }
+                                }
+                            }
                         }
+                        .padding(.bottom)
                         .padding(.horizontal, 10)
-                        
+
                         VStack {
+                            
+                            //
+                            
                             Image("system-photo")
                             
                             Text("с камеры")
                                 .font(.custom(Fonts.Inter.bold, size: 16))
+                                .foregroundColor(Color(toText: .mainblack))
                         }
-                        .padding(.horizontal, 15)
+                        .padding(.top, -8)
+                        .padding(.horizontal, 10)
                     }
                     .padding()
                 }

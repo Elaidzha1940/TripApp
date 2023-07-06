@@ -1,9 +1,11 @@
+//  /*
 //
-//  ImagePicker.swift
-//  TripApp
+//  Project: TripApp
+//  File: ImagePicker.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 06.07.2023
 //
-//  Created by Elaidzha Shchukin on 06.07.2023.
-//
+//  */
 
 import PhotosUI
 import SwiftUI
@@ -14,6 +16,7 @@ struct ImagePicker: View {
     @State var data: Data?
     
     var body: some View {
+        
         VStack {
             if let data = data, let uiimage = UIImage(data: data) {
                 Image(uiImage: uiimage)
