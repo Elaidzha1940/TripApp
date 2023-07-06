@@ -32,7 +32,7 @@ struct CameraView: View {
     
     var body: some View {
         
-        //Camera preview...
+        // Camera preview...
         ZStack {
             
             Color.black
@@ -43,20 +43,42 @@ struct CameraView: View {
                 Spacer()
                 
                 HStack {
-                    Button(action: {camera.isTaken.toggle()},
-                           label: {
-                        Text("Camera")
-                            .bold()
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    })
+                    
+                   // If taken showing save and again takr button...
+                    
+                    if camera .isTaken {
+                        
+                        Button(action: {}, label: {
+                            Text("Save")
+                                .font(.custom(Fonts.Inter.regular, size: 18))
+                                .foregroundColor(Color(toText: .mainblack))
+                                .padding(.vertical, 10)
+                                .padding(.horizontal, 20)
+                                .background(Color.white)
+                                .clipShape(Capsule())
+                            
+                        })
+                        .padding(.leading)
+                         
+                        Spacer()
+                        
+                    } else {
+                        
+                        Button(action: {camera.isTaken.toggle()},
+                               label: {
+                            Text("Camera")
+                                .bold()
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        })
+                    }
                 }
             }
         }
     }
 }
 
-//Camera Model...
+// Camera Model...
 
 class CameraModel: ObservableObject {
     
