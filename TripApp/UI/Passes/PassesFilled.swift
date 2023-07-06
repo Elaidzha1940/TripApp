@@ -474,6 +474,7 @@ struct PassesFilled: View {
     }
 }
 
+#if DEBUG
 struct PassesFilled_Previews: PreviewProvider {
     static var previews: some View {
         self.devices {
@@ -481,3 +482,4 @@ struct PassesFilled_Previews: PreviewProvider {
         }
     }
 }
+#endif
