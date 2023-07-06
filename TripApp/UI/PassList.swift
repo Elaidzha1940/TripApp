@@ -83,6 +83,7 @@ struct PassList: View {
     }
 }
 
+#if DEBUG
 struct PassList_Previews: PreviewProvider {
     static var previews: some View {
         self.devices {
@@ -90,3 +91,4 @@ struct PassList_Previews: PreviewProvider {
         }
     }
 }
+#endif

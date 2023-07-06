@@ -167,6 +167,7 @@ struct UserProfile: View {
     }
 }
 
+#if DEBUG
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
         self.devices {
@@ -174,3 +175,4 @@ struct UserProfile_Previews: PreviewProvider {
         }
     }
 }
+#endif

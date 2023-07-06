@@ -87,6 +87,7 @@ struct OnBoarding: View {
     }
 }
 
+#if DEBUG
 struct OnBoarding_Previews: PreviewProvider {
     static var previews: some View {
         self.devices {
@@ -94,3 +95,4 @@ struct OnBoarding_Previews: PreviewProvider {
         }
     }
 }
+#endif
