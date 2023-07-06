@@ -27,6 +27,9 @@ struct AccessCamera_Previews: PreviewProvider {
 #endif
 
 struct CameraView: View {
+    
+    @StateObject var camera = CameraModel()
+    
     var body: some View {
         
         //Camera preview...
@@ -40,16 +43,23 @@ struct CameraView: View {
                 Spacer()
                 
                 HStack {
-                    Button {
-                         //Action
-                    } label: {
+                    Button(action: {camera.isTaken.toggle()},
+                           label: {
                         Text("Camera")
                             .bold()
                             .font(.largeTitle)
                             .foregroundColor(.white)
-                    }
+                    })
                 }
             }
         }
     }
 }
+
+//Camera Model...
+
+class CameraModel: ObservableObject {
+    
+    @Published var isTaken = false
+}
+
