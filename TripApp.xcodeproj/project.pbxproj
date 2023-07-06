@@ -32,6 +32,7 @@
 		E4DEA2222A3F3CD10051F4BA /* Inter in Resources */ = {isa = PBXBuildFile; fileRef = E4DEA2212A3F3CD10051F4BA /* Inter */; };
 		E4DEA2272A3F3D080051F4BA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2262A3F3D080051F4BA /* Fonts.swift */; };
 		E4DEA2292A40A1980051F4BA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEA2282A40A1980051F4BA /* UserProfile.swift */; };
+		E4EA944B2A56FE350052414F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA944A2A56FE350052414F /* ImagePicker.swift */; };
 		E4F2CBDC2A41EBA70068AEF1 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2CBDB2A41EBA70068AEF1 /* TabMenu.swift */; };
 		E4F2CBDF2A41EC160068AEF1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2CBDE2A41EC160068AEF1 /* LoginView.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		E4DEA2212A3F3CD10051F4BA /* Inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Inter; sourceTree = "<group>"; };
 		E4DEA2262A3F3D080051F4BA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E4DEA2282A40A1980051F4BA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E4EA944A2A56FE350052414F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E4F2CBDB2A41EBA70068AEF1 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
 		E4F2CBDE2A41EC160068AEF1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +196,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		E4EA94492A56FE0C0052414F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA944A2A56FE350052414F /* ImagePicker.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		E4F2CBD92A41EB4B0068AEF1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +211,7 @@
 				E4F2CBDD2A41EBD20068AEF1 /* Auth_login */,
 				E4F2CBE02A41ECE20068AEF1 /* Representations */,
 				E4F2CBE12A41EE0D0068AEF1 /* Components */,
+				E4EA94492A56FE0C0052414F /* Camera */,
 				E4B390CE2A34E98E002D0520 /* OnBoarding.swift */,
 				E4DEA2282A40A1980051F4BA /* UserProfile.swift */,
 				E4C812922A4492F8007D3F20 /* PassList.swift */,
@@ -327,6 +338,7 @@
 				E4B390CF2A34E98E002D0520 /* OnBoarding.swift in Sources */,
 				E4DEA20C2A3F32CD0051F4BA /* Text.swift in Sources */,
 				E4DEA20A2A3F321F0051F4BA /* Resources.swift in Sources */,
+				E4EA944B2A56FE350052414F /* ImagePicker.swift in Sources */,
 				E4DEA21C2A3F388E0051F4BA /* ColorAsset.swift in Sources */,
 				E4DEA2292A40A1980051F4BA /* UserProfile.swift in Sources */,
 				E4DEA2082A3F31BA0051F4BA /* PreviewProvider.swift in Sources */,

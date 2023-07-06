@@ -450,19 +450,6 @@ struct PassesFilled: View {
                         .cornerRadius(60)
                         .padding()
                 }
-                
-                Button {
-                    //action
-                } label: {
-                    Text("Войти")
-                        .font(.custom(Fonts.Inter.medium, size: 20))
-                        .foregroundColor(Color(toText: .main))
-                        .frame(width: 360, height: 50)
-                        .background(Color(toElement: .mainblue))
-                        .cornerRadius(60)
-                        .padding()
-                }
-
             }
             
             HStack(spacing: 1.0) {
