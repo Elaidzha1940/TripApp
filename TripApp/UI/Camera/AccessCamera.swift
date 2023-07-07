@@ -106,9 +106,61 @@ class CameraModel: ObservableObject {
     
     @Published var session = AVCaptureSession()
     
-    func setUP() {
+    @Published var alert = false
+    
+    // Since gonna read pics data...
+    @Published var output = AVCapturePhotoOutput()
+    
+    func Check() {
         
         // First checking the camera...
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+           
+        case .authorized:
+            setUP()
+            return
+            // Setting Up Session
+        case.notDetermined:
+            // Retusting for the permission...
+            AVCaptureDevice.requestAccess(for: .video) { (status) in
+                
+                if status {
+                    self.setUP()
+                }
+            }
+        case .denied:
+            self.alert.toggle()
+            return
+        default:
+            return
+        }
+    }
+    
+    func setUP() {
+        
+        // Setting up camera...
+        
+        do {
+            
+            // Setting  configs...
+            self.session.beginConfiguration()
+            
+            // Change for your own...
+            let device = AVCaptureDevice.default(.builtInDualCamera, for: .video, position: .back)
+            
+            let input = try AVCaptureDeviceInput(device: device!)
+            
+            // Checking and adding to session...
+            
+            if self.session.canAddInput(input) {
+                self.session.addInput(input)
+            }
+            
+            // Same for output...
+        }
+        catch {
+            print(error.localizedDescription)
+        }
     }
 }
 
