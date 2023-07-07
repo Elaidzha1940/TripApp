@@ -8,6 +8,7 @@
 //  */
 
 import SwiftUI
+import AVFoundation
 
 struct AccessCamera: View {
     var body: some View {
@@ -39,6 +40,25 @@ struct CameraView: View {
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack {
+                
+                if camera.isTaken {
+                    
+                    HStack {
+                        Button(action: {}, label: {
+                            
+                            Spacer()
+                            
+                            Image("system-photo")
+                                .foregroundColor(.black)
+                                .padding()
+                                .background(Color.white)
+                                .clipShape(Circle())
+
+                            
+                        })
+                        .padding(.trailing, 10)
+                    }
+                }
                 
                 Spacer()
                 
@@ -83,5 +103,12 @@ struct CameraView: View {
 class CameraModel: ObservableObject {
     
     @Published var isTaken = false
+    
+    @Published var session = AVCaptureSession()
+    
+    func setUP() {
+        
+        // First checking the camera...
+    }
 }
 
