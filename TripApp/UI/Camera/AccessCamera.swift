@@ -155,8 +155,13 @@ class CameraModel: ObservableObject {
             if self.session.canAddInput(input) {
                 self.session.addInput(input)
             }
-            
+        
             // Same for output...
+            if session.canAddOutput(self.output) {
+                self.session.addOutput(self.output)
+            }
+            
+            self.session.commitConfiguration()
         }
         catch {
             print(error.localizedDescription)
