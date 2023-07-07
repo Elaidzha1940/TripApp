@@ -17,7 +17,7 @@ struct AccessCamera: View {
     }
 }
 
-#if DEBUG
+//#if DEBUG
 struct AccessCamera_Previews: PreviewProvider {
     static var previews: some View {
         self.devices {
@@ -25,7 +25,7 @@ struct AccessCamera_Previews: PreviewProvider {
         }
     }
 }
-#endif
+//#endif
 
 struct CameraView: View {
     
