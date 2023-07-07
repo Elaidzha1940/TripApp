@@ -95,6 +95,10 @@ struct CameraView: View {
                 }
             }
         }
+        .onAppear(perform: {
+            
+            camera.Check()
+        })
     }
 }
 
@@ -169,3 +173,12 @@ class CameraModel: ObservableObject {
     }
 }
 
+// Setting view for preview...
+
+struct CameraPreview: UIViewRepresentable {
+     
+    @ObservedObject var camera: CameraModel
+    func makeUIView(context: Context) -> some UIView {
+        <#code#>
+    }
+}
