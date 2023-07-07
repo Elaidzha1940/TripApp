@@ -36,7 +36,7 @@ struct CameraView: View {
         // Camera preview...
         ZStack {
             
-            Color.black
+            CameraPreview(camera: camera)
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack {
@@ -115,6 +115,9 @@ class CameraModel: ObservableObject {
     // Since gonna read pics data...
     @Published var output = AVCapturePhotoOutput()
     
+    // Preview...
+    @Published var preveiw: AVCaptureVideoPreviewLayer!
+    
     func Check() {
         
         // First checking the camera...
@@ -178,7 +181,22 @@ class CameraModel: ObservableObject {
 struct CameraPreview: UIViewRepresentable {
      
     @ObservedObject var camera: CameraModel
-    func makeUIView(context: Context) -> some UIView {
-        <#code#>
+    
+    func makeUIView(context: Context) -> UIView {
+        
+        let view = UIView(frame: UIScreen.main.bounds)
+        
+        camera.preveiw = AVCaptureVideoPreviewLayer(session: camera.session)
+        camera.preveiw.frame = view.frame
+        
+        // Own properties...
+        camera.preveiw.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(camera.preveiw)
+        
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {
+        
     }
 }
