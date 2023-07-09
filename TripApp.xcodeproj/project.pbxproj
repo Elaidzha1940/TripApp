@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E40861632A4202F60045BC22 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */; };
+		E44E4C512A5B150800090183 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E4C502A5B150800090183 /* Navigate.swift */; };
 		E4AB34802A48A8F8003051EF /* TabMenuPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */; };
 		E4AB34832A49DE9C003051EF /* PassesC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34822A49DE9C003051EF /* PassesC.swift */; };
 		E4AB34852A49DEF8003051EF /* PassesF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB34842A49DEF8003051EF /* PassesF.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		E44E4C502A5B150800090183 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
 		E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuPlus.swift; sourceTree = "<group>"; };
 		E4AB34822A49DE9C003051EF /* PassesC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesC.swift; sourceTree = "<group>"; };
 		E4AB34842A49DEF8003051EF /* PassesF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesF.swift; sourceTree = "<group>"; };
@@ -210,26 +212,25 @@
 		E4F2CBD92A41EB4B0068AEF1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E4F2CBDA2A41EB8A0068AEF1 /* Main */,
+				E4F2CBDA2A41EB8A0068AEF1 /* Navigation */,
 				E4F2CBDD2A41EBD20068AEF1 /* Auth_login */,
 				E4F2CBE02A41ECE20068AEF1 /* Representations */,
 				E4F2CBE12A41EE0D0068AEF1 /* Components */,
 				E4B390CE2A34E98E002D0520 /* OnBoarding.swift */,
 				E4DEA2282A40A1980051F4BA /* UserProfile.swift */,
 				E4C812922A4492F8007D3F20 /* PassList.swift */,
-				E4EA94492A56FE0C0052414F /* Camera */,
-				E4AB34812A49DD46003051EF /* Passes */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		E4F2CBDA2A41EB8A0068AEF1 /* Main */ = {
+		E4F2CBDA2A41EB8A0068AEF1 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				E44E4C502A5B150800090183 /* Navigate.swift */,
 				E4F2CBDB2A41EBA70068AEF1 /* TabMenu.swift */,
 				E4AB347F2A48A8F8003051EF /* TabMenuPlus.swift */,
 			);
-			path = Main;
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		E4F2CBDD2A41EBD20068AEF1 /* Auth_login */ = {
@@ -252,6 +253,8 @@
 		E4F2CBE12A41EE0D0068AEF1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E4AB34812A49DD46003051EF /* Passes */,
+				E4EA94492A56FE0C0052414F /* Camera */,
 				E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */,
 				E4AB34862A4B096C003051EF /* FloatingLabelTextField.swift */,
 				E4AB34882A4B0A2A003051EF /* FloatingBorderLabelTextField.swift */,
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E44E4C512A5B150800090183 /* Navigate.swift in Sources */,
 				E4AB34892A4B0A2A003051EF /* FloatingBorderLabelTextField.swift in Sources */,
 				E4AB34872A4B096C003051EF /* FloatingLabelTextField.swift in Sources */,
 				E40861632A4202F60045BC22 /* CustomTextFieldStyle.swift in Sources */,
