@@ -1,9 +1,13 @@
+//  /*
 //
-//  Navigate.swift
-//  TripApp
+//  Project: TripApp
+//  File: Navigate.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 09.07.2023
 //
-//  Created by Elaidzha Shchukin on 09.07.2023.
+//  S
 //
+//  */ 
 
 import SwiftUI
 
@@ -12,24 +16,20 @@ struct Navigate: View {
         
         NavigationView {
             VStack {
-                
-                OnBoarding()
-                
-                NavigationLink {
-                    UserProfile()
-                } label: {
-                    Text("Войти")
-
+                NavigationLink(destination: UserProfile()) {
+                    OnBoarding()
                 }
+                
             }
             .navigationTitle("")
-            //.navigationBarBackButtonHidden(false)
         }
     }
 }
 
 struct Navigate_Previews: PreviewProvider {
     static var previews: some View {
-        Navigate()
+        self.devices {
+            Navigate()
+        }
     }
 }
