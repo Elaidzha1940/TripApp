@@ -87,6 +87,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E44E4C522A5C8EB400090183 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E4AB34812A49DD46003051EF /* Passes */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +219,7 @@
 		E4F2CBD92A41EB4B0068AEF1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E44E4C522A5C8EB400090183 /* Views */,
 				E4AB34812A49DD46003051EF /* Passes */,
 				E4EA94492A56FE0C0052414F /* Camera */,
 				E4F2CBDA2A41EB8A0068AEF1 /* Navigation */,
