@@ -23,6 +23,7 @@ struct CustomTextFieldStyle: TextFieldStyle {
             Text(placeholder)
                 .font(.custom("Inter-Regular", size: 16))
                 .font(.system(self.isEditing ? .title3 : .title2, design: .rounded))
+                .font(.system(self.isEditing ? .title3 : .title2, design: .rounded))
                 .foregroundColor(placeholderColor.opacity(0.5))
                 .padding(.horizontal, self.isEditing ? 10 : 0)
                 .background(placeholderBgColor) // the bg color of text when it placed between border

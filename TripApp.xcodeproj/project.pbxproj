@@ -94,6 +94,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E44E4C532A5C8EFC00090183 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */,
+				E4AB34862A4B096C003051EF /* FloatingLabelTextField.swift */,
+				E4AB34882A4B0A2A003051EF /* FloatingBorderLabelTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		E4AB34812A49DD46003051EF /* Passes */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +231,6 @@
 			children = (
 				E44E4C522A5C8EB400090183 /* Views */,
 				E4AB34812A49DD46003051EF /* Passes */,
-				E4EA94492A56FE0C0052414F /* Camera */,
 				E4F2CBDA2A41EB8A0068AEF1 /* Navigation */,
 				E4F2CBDD2A41EBD20068AEF1 /* Auth_login */,
 				E4F2CBE02A41ECE20068AEF1 /* Representations */,
@@ -263,9 +272,8 @@
 		E4F2CBE12A41EE0D0068AEF1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E40861622A4202F60045BC22 /* CustomTextFieldStyle.swift */,
-				E4AB34862A4B096C003051EF /* FloatingLabelTextField.swift */,
-				E4AB34882A4B0A2A003051EF /* FloatingBorderLabelTextField.swift */,
+				E44E4C532A5C8EFC00090183 /* TextField */,
+				E4EA94492A56FE0C0052414F /* Camera */,
 			);
 			path = Components;
 			sourceTree = "<group>";
