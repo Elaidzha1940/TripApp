@@ -21,10 +21,32 @@ struct Navigate: View {
                 }
                 
             }
-            .navigationTitle("")
         }
     }
 }
+
+struct UserProfileOne: View {
+    var body: some View {
+        
+        VStack {
+            NavigationLink(destination: PassList()) {
+                UserProfileOne()
+            }
+        }
+    }
+}
+
+//struct PassListOne: View {
+//    var body: some View {
+//
+//
+//        VStack {
+//            NavigationLink(destination: UserProfile()) {
+//                UserProfile()
+//            }
+//        }
+//    }
+//}
 
 struct Navigate_Previews: PreviewProvider {
     static var previews: some View {
