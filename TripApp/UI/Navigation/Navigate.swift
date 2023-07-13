@@ -41,8 +41,8 @@ struct UserProfileOne: View {
 //
 //
 //        VStack {
-//            NavigationLink(destination: UserProfile()) {
-//                UserProfile()
+//            NavigationLink(destination: UserProfi()) {
+//                //UserProfile()
 //            }
 //        }
 //    }
